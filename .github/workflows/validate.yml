@@ -20,6 +20,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+        env:
+          HOME: /root
       - run: python3 tests/test_skill.py
   native:
     runs-on: macos-15
