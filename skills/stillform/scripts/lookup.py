@@ -22,7 +22,7 @@ def search(rows, query, kind):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("query", help="Title or topic words, for example 'sheets' or 'liquid glass'")
-    parser.add_argument("--kind", choices=["guideline","video","resource","story","kit"])
+    parser.add_argument("--kind", choices=["guideline","video","resource","story","kit","sample"])
     parser.add_argument("--media", action="store_true", help="Include linked HIG illustration and clip variants")
     parser.add_argument("--media-type", choices=["image","video"], help="Show only matching linked media from the resulting topics")
     parser.add_argument("--limit", type=int, default=8)
@@ -32,6 +32,7 @@ def main():
     rows=search(json.loads(path.read_text(encoding="utf-8")),args.query,args.kind)
     for row in rows[:args.limit]:
         print(f"{row['title']} [{row['kind']}]\n  {row['url']}")
+        for download in row.get("downloads",[]): print("  " + download)
         if args.media or args.media_type:
             for url in row.get("media",[]):
                 is_video=urlsplit(url).path.lower().endswith((".mp4",".mov",".m4v",".webm"))

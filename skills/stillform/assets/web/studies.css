@@ -18,7 +18,7 @@
 .tide { color-scheme: dark; --paper: #102c30; --panel: #17393d; --ink: #f1f4e8; --muted: #b4ccc5; --line: #5b7c7b;
   --soft: #25494c; --tint: #e4e9a5; --on-tint: #1e3433; --focus: #b9e6ff; }
 .tide h1 { font-style: italic; }
-.tide-panel { border-block: 1px solid var(--line); padding-block: 1.6rem; }
+.tide-panel { border-block: 1px solid var(--line); padding-block: 1.6rem; container-type: inline-size; }
 .tide-panel h2 { margin-top: .35rem; font: 600 1.5rem var(--sans); letter-spacing: -.04em; }
 .reading { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
 .reading output { font: 500 clamp(3.6rem,8vw,7.6rem)/1.1 var(--serif); letter-spacing: -.065em; font-variant-numeric: tabular-nums; }
@@ -27,6 +27,7 @@
 .gridlines { stroke: var(--line); fill: none; stroke-dasharray: 2 6; }
 .axis,.proof-kicker { display: flex; justify-content: space-between; gap: .75rem; font: .78rem/1.5 var(--mono); letter-spacing: .04em; }
 .axis { color: var(--muted); }
+@container (max-width: 25rem) { .axis span:nth-child(even) { display:none; } }
 .tide-panel .field { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.4rem; }
 #hour { width: 100%; min-height: var(--hit); margin: 0; }
 .after-plot { margin-block: 1.2rem; }
