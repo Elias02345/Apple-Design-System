@@ -12,10 +12,14 @@ final class NativeLayoutTests: XCTestCase {
     }
 
     @MainActor private func capture<Content: View>(_ content: Content, name: String, size: NSSize) throws {
-        let host = NSHostingView(rootView: content.environment(\.colorScheme, .light))
+        let host = NSHostingView(rootView: content.background(Color(nsColor: .windowBackgroundColor)).environment(\.colorScheme, .light))
         let window = NSWindow(contentRect: NSRect(origin: .zero, size: size),
                               styleMask: [.titled, .resizable], backing: .buffered, defer: false)
         window.contentView = host
+        window.appearance = NSAppearance(named: .aqua)
+        window.title = "Field journal"
+        window.makeKeyAndOrderFront(nil)
+        defer { window.orderOut(nil) }
         host.frame.size = size
         host.layoutSubtreeIfNeeded()
         window.displayIfNeeded()
