@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion studies · Stillform</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="studies.css">
+<link rel="stylesheet" href="motion.css">
+<script src="common.js" defer></script>
+<script src="motion.js" defer></script>
+</head>
+<body class="motion">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><span class="brand"><i class="mark" aria-hidden="true"></i>Stillform</span>
+<nav aria-label="Field studies"><a href="index.html">Cabinet</a>
+<a href="tide.html">Tide book</a>
+<a href="type.html">Type room</a>
+<a href="controls.html">Controls</a></nav></header>
+<main id="main" tabindex="-1">
+<a href="controls.html">← Control bench</a>
+<div class="section-head section"><div><p class="eyebrow">Interaction studies</p><h1>Motion studies</h1></div></div>
+<section class="motion-frame" aria-labelledby="light-title">
+ <div class="stack"><p class="eyebrow">Light table</p><h2 id="light-title">Study the grain.</h2>
+ <p>Change the light on the specimen to inspect its surface.</p>
+ <div class="light-switch" role="group" aria-label="Lighting angle"><span aria-hidden="true" class="light-cursor"></span><button aria-pressed="true" data-light="0">Warm</button><button aria-pressed="false" data-light="1">Cool</button></div>
+ <div><button id="show-setup" aria-expanded="false" aria-controls="setup">Lighting details</button></div>
+ <div class="reveal" id="setup" inert><div><p>Warm light brings out the ochre matrix. Cool light separates the pale mineral seams from their surroundings.</p></div></div>
+ <div><button id="enlarge" class="primary">Open light table</button></div></div>
+ <figure class="light-plate"><img src="ammonite.webp" alt="Cross-section of an ammonite under adjustable lighting"><figcaption id="light-label">Warm light</figcaption></figure>
+</section>
+<dialog id="light-sheet" aria-labelledby="sheet-title"><div class="stack"><p class="eyebrow">Light table</p><h2 id="sheet-title">Ammonite detail</h2><img class="sheet-plate" src="ammonite.webp" alt="Magnified fossil chambers"><p id="sheet-label"></p><button id="dismiss" autofocus>Done</button></div></dialog>
+</main>
+</body>
+</html>

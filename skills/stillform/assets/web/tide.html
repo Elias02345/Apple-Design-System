@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tide book · Stillform</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="studies.css">
+<script src="common.js" defer></script>
+<script src="tide.js" defer></script>
+</head>
+<body class="tide">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><span class="brand"><i class="mark" aria-hidden="true"></i>Stillform</span>
+<nav aria-label="Field studies"><a href="index.html">Cabinet</a>
+<a href="tide.html" aria-current="page">Tide book</a>
+<a href="type.html">Type room</a>
+<a href="controls.html">Controls</a></nav></header>
+<main id="main" tabindex="-1">
+<div class="section-head"><div><p class="eyebrow">Coastal observations</p><h1>Tide book</h1></div>
+<div class="field"><label for="station">Station</label><select id="station"><option>North inlet</option><option>West pier</option></select></div></div>
+<section class="tide-panel" aria-labelledby="station-title">
+  <div class="section-head"><div><p class="eyebrow">Modelled water level</p><h2 id="station-title">North inlet</h2></div>
+    <div class="segment" role="group" aria-label="Height units"><button id="metres" aria-pressed="true">Metres</button><button id="feet" aria-pressed="false">Feet</button></div></div>
+  <div class="reading"><output id="height" for="hour"></output><span id="direction"></span></div>
+  <svg id="plot" viewBox="0 0 960 200" preserveAspectRatio="none" role="img" aria-labelledby="plot-title"><title id="plot-title">Modelled water level by hour</title>
+    <defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M0 8L8 0" fill="none" stroke="currentColor" opacity=".27"/></pattern></defs>
+    <g class="gridlines"><path d="M0 45H960M0 105H960M0 165H960"/></g>
+    <path id="fill" fill="url(#hatch)"/><path id="curve" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path id="cursor" stroke="currentColor" stroke-dasharray="4 6"/><circle id="point" r="6" fill="currentColor"/>
+  </svg>
+  <div class="axis" aria-hidden="true"><span>00:00</span><span>06:00</span><span>12:00</span><span>18:00</span><span>23:00</span></div>
+  <label class="field" for="hour">Reading time <span id="clock"></span></label><input id="hour" type="range" min="0" max="23" step="1" value="8">
+</section>
+<div class="section-head after-plot"><p class="muted">Illustrative station data for exploring a single day.</p><button class="primary" id="log">Log reading</button></div>
+<p role="status" id="log-state"></p>
+<details><summary>Hourly data</summary><table><caption id="table-caption"></caption><thead><tr><th scope="col">Time</th><th scope="col">Water level</th></tr></thead><tbody id="hours"></tbody></table></details>
+<section class="section stack"><h2>Observation log</h2><ul id="log-list"></ul><p id="log-empty" class="muted">Log a reading to keep its station, time and height in this browser.</p></section>
+</main>
+</body>
+</html>
