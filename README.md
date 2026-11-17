@@ -6,6 +6,8 @@ An independent, Apple-informed design system for agents building real product in
 
 **[Read the skill](skills/stillform/SKILL.md)** · **[Find a component](skills/stillform/references/components.md)** · **[Inspect an interface](skills/stillform/references/inspection.md)** · **[Download the release](https://github.com/Elias02345/Apple-Design-System/releases/latest)**
 
+Run `python skills/stillform/scripts/route.py editor form cancellation` for a task-specific set of rules, acceptance checks and code paths. Each of the [20 machine-readable contracts](skills/stillform/references/contracts.json) identifies where it applies and how to test it. The [integration recipes](skills/stillform/references/recipes.md) show how to embed the same controls in another product.
+
 ## Use the skill
 
 Download `stillform.zip` from the release and extract its `stillform` directory into `~/.codex/skills/`, or copy [skills/stillform](skills/stillform) from this repository. The resulting path is `~/.codex/skills/stillform/SKILL.md`. For another agent that reads skill folders, use its documented skill location. The examples work offline.
@@ -47,7 +49,7 @@ swift test
 swift run FieldDesk
 ```
 
-For Watch, TV and Vision, the [platform guide](skills/stillform/references/platforms.md) describes input, information hierarchy and device-specific acceptance exercises.
+For Watch, TV and Vision, [SurfaceKit](skills/stillform/assets/apple-surfaces) implements a Crown-adjustable reading, a remote-focus station shelf and a spatial reading window. The [platform guide](skills/stillform/references/platforms.md) pairs each view with device-specific acceptance exercises.
 
 ## Sources and evidence
 
@@ -61,4 +63,4 @@ npx playwright install
 npm test
 ```
 
-[Release verification](release/VERIFY.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE)
+[Validation evidence](docs/validation.md) · [Release verification](release/VERIFY.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE)

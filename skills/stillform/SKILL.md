@@ -9,6 +9,8 @@ Start with one sentence describing the person, the object they act on, and the r
 
 ## Choose the right material
 
+For a task-specific shortlist, run `python scripts/route.py editor form cancellation` from this folder. Each match returns a decision, an acceptance exercise, a working example or reference, and a primary source. Add `--json` for machine-readable handoff.
+
 | Decision | Open |
 | --- | --- |
 | What belongs on this screen? How should it feel? | [Design decisions](references/decisions.md) |

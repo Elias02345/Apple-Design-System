@@ -18,7 +18,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm test
-      - run: python skills/stillform/scripts/lookup.py buttons --kind guideline --limit 1
+      - run: python tests/test_skill.py
   native:
     runs-on: macos-15
     defaults:
@@ -32,3 +32,16 @@ jobs:
         with:
           name: native-captures
           path: ${{ runner.temp }}/native-captures
+  platform-surfaces:
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: skills/stillform/assets/apple-surfaces
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test
+      - name: Build Watch, TV and Vision library views
+        run: |
+          for platform in watchOS tvOS visionOS; do
+            xcodebuild -scheme SurfaceKit -destination "generic/platform=$platform" -derivedDataPath "$RUNNER_TEMP/stillform-$platform" CODE_SIGNING_ALLOWED=NO build
+          done

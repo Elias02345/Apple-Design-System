@@ -1,6 +1,6 @@
 # Translate the task across platforms
 
-Keep the underlying object, intent and outcome the same. Change the arrangement, interaction and density with the platform. The runnable native package targets macOS 14+ and iOS/iPadOS 17+. The remaining rows are adaptation guides for work on those devices.
+Keep the underlying object, intent and outcome the same. Change the arrangement, interaction and density with the platform. The journal package targets macOS 14+ and iOS/iPadOS 17+. A separate [SurfaceKit package](../assets/apple-surfaces/Package.swift) implements three views of the same illustrative station model.
 
 | Platform | Arrangement and input | Acceptance exercise |
 | --- | --- | --- |
@@ -19,3 +19,9 @@ Use [FieldJournalView](../assets/swift/Sources/FieldKit/FieldJournalView.swift) 
 The desktop sample models a single journal in user defaults for small demonstration records. Use a document or database and appropriate conflict handling for multiwindow production editing. The web print queue simulates a printer locally; production jobs need a real acknowledgement, durable ID and retry semantics.
 
 For widgets, Live Activities, CarPlay, complications, immersive experiences and other system surfaces, retrieve the dedicated topic before choosing a layout. Relevant search examples include `python scripts/lookup.py complications` and `python scripts/lookup.py "live activities"`. Review on the target device or simulator before claiming support.
+
+## Views for host apps
+
+- In a watchOS 10+ host, present [WristReading](../assets/apple-surfaces/Sources/SurfaceKit/WristReading.swift). The Crown and two visible buttons change one bounded hour value.
+- In a tvOS 17+ host, present [StationShelf](../assets/apple-surfaces/Sources/SurfaceKit/StationShelf.swift). A focused station becomes selected only when the remote activates it. The selected indicator persists after focus moves elsewhere.
+- In a visionOS 1+ host, present [SpatialReading](../assets/apple-surfaces/Sources/SurfaceKit/SpatialReading.swift) in a WindowGroup. A system picker and stepper make the task possible within one ordinary window.

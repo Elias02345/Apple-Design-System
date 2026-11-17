@@ -1,0 +1,289 @@
+[
+  {
+    "rule": "Preserve the current object",
+    "tags": [
+      "navigation",
+      "split-view",
+      "resize",
+      "keyboard"
+    ],
+    "when": "A person opens detail or changes window width.",
+    "action": "Keep the selected object's stable ID and reconstruct the destination from it. The previous list keeps its filter.",
+    "verify": "Open a filtered item, resize, close it and inspect selection and focus.",
+    "example": "assets/swift/Sources/FieldKit/FieldJournalView.swift",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/navigation-and-search"
+  },
+  {
+    "rule": "Choose a reachable focus destination",
+    "tags": [
+      "navigation",
+      "modal",
+      "dialog",
+      "focus",
+      "keyboard",
+      "removal"
+    ],
+    "when": "A transient surface closes after changing its source list.",
+    "action": "Focus the initiating element if it still exists. Otherwise choose the nearest surviving action that explains the new state.",
+    "verify": "Remove the last saved item inside its dialog, dismiss and activate the focused control.",
+    "example": "assets/web/cabinet.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/focus-and-selection"
+  },
+  {
+    "rule": "Stage explicit edits",
+    "tags": [
+      "editor",
+      "form",
+      "sheet",
+      "cancel"
+    ],
+    "when": "A bounded editor has both Save and Cancel.",
+    "action": "Edit a separate draft and commit by stable ID only after validation succeeds. Ask before abandoning meaningful dirty work.",
+    "verify": "Edit, press Escape, keep editing, then discard. The committed object must match its previous version.",
+    "example": "assets/web/agenda.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/sheets"
+  },
+  {
+    "rule": "Preserve fields after failure",
+    "tags": [
+      "form",
+      "retry",
+      "offline",
+      "validation"
+    ],
+    "when": "Submission fails or conflicts.",
+    "action": "Identify the specific cause, keep valid values, associate the message with its field and focus the first repairable input when appropriate.",
+    "verify": "Submit an overlapping booking and change only its start time before retry.",
+    "example": "assets/web/agenda.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/entering-data"
+  },
+  {
+    "rule": "Avoid stale completion",
+    "tags": [
+      "async",
+      "form",
+      "loading",
+      "cancellation",
+      "retry"
+    ],
+    "when": "A cancellable operation may resolve after a newer one.",
+    "action": "Assign the operation an identity. Apply its completion only while it is current. Disable duplicate submissions and model server-side effects separately.",
+    "verify": "Cancel job A, complete B and deliver A's late result. Only B may change visible state.",
+    "example": "assets/web/primitives.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/loading"
+  },
+  {
+    "rule": "Report persistence truthfully",
+    "tags": [
+      "storage",
+      "failure",
+      "privacy",
+      "feedback"
+    ],
+    "when": "A status claims content has been saved.",
+    "action": "Report durability after storage acknowledges the write. If storage is unavailable, retain the draft for this visit and say where it lives.",
+    "verify": "Deny storage writes, edit, close and reopen during the same visit. Read the status.",
+    "example": "assets/web/cabinet.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/feedback"
+  },
+  {
+    "rule": "Use a meaningful empty state",
+    "tags": [
+      "search",
+      "list",
+      "filter",
+      "empty"
+    ],
+    "when": "A list has zero results.",
+    "action": "Distinguish a new collection from a filtered-out dataset. Offer one action that addresses the actual reason.",
+    "verify": "Check both an empty saved shelf and a search term with zero results.",
+    "example": "assets/web/cabinet.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/searching"
+  },
+  {
+    "rule": "Keep irreversible decisions specific",
+    "tags": [
+      "delete",
+      "undo",
+      "destructive",
+      "list"
+    ],
+    "when": "An action removes an object.",
+    "action": "Prefer recoverable removal where appropriate. Name the affected object and restore its ID, order and keyboard focus after undo.",
+    "verify": "Remove the middle item and undo it. Inspect the original neighbors and the restored action.",
+    "example": "assets/web/controls.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/undo-and-redo"
+  },
+  {
+    "rule": "Do not fabricate progress",
+    "tags": [
+      "async",
+      "loading",
+      "progress"
+    ],
+    "when": "The app cannot calculate completion percentage.",
+    "action": "Use an indeterminate progress role and a named pending action. Announce success, failure or cancellation exactly when it happens.",
+    "verify": "Interrupt the printer and verify no success message or queued job appears.",
+    "example": "assets/web/controls.html",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/progress-indicators"
+  },
+  {
+    "rule": "Express exact values independently of a chart",
+    "tags": [
+      "chart",
+      "instrument",
+      "table",
+      "units"
+    ],
+    "when": "A chart reports measurements.",
+    "action": "Use the same numeric model for axes, textual readings, accessible alternatives and saved observations. Convert units only for display.",
+    "verify": "Select a time, change units and compare the readout with the hourly table.",
+    "example": "assets/web/tide.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/charting-data"
+  },
+  {
+    "rule": "Respect reduced motion",
+    "tags": [
+      "motion",
+      "animation",
+      "accessibility",
+      "transitions"
+    ],
+    "when": "Movement conveys a changed selection, context or region.",
+    "action": "Preserve the final state and accessible label when motion is reduced. Retarget interrupted transitions.",
+    "verify": "Enable reduced motion, reverse the selection rapidly and inspect the final label and geometry.",
+    "example": "assets/web/motion.css",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/motion"
+  },
+  {
+    "rule": "Keep hidden disclosures inert",
+    "tags": [
+      "motion",
+      "disclosure",
+      "focus",
+      "accessibility"
+    ],
+    "when": "Details are collapsed in place.",
+    "action": "Update expanded state on activation and remove hidden descendants from keyboard interaction. Return focus if code collapses a focused descendant.",
+    "verify": "Open, focus inside, then collapse programmatically and Tab forward.",
+    "example": "assets/web/primitives.js",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/disclosure-controls"
+  },
+  {
+    "rule": "Make structure survive text growth",
+    "tags": [
+      "typography",
+      "layout",
+      "rtl",
+      "dynamic-type",
+      "localization"
+    ],
+    "when": "Width is compact or text is enlarged.",
+    "action": "Let the grid track and its children shrink, let long text wrap, and keep labels visible. Use logical edges.",
+    "verify": "Set 200% text, 390 px width and a long Arabic proof. Check document width and control reach.",
+    "example": "assets/web/studies.css",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/typography"
+  },
+  {
+    "rule": "Keep native control semantics",
+    "tags": [
+      "button",
+      "toggle",
+      "radio",
+      "checkbox",
+      "controls"
+    ],
+    "when": "A surface asks someone to choose or act.",
+    "action": "Use a native button for commands, checkbox or switch for persistent Boolean state and a labeled radio group for mutually exclusive form values.",
+    "verify": "Navigate by keyboard and inspect the role, label, value and disabled state.",
+    "example": "assets/web/controls.html",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/toggles"
+  },
+  {
+    "rule": "Make precision available without a drag",
+    "tags": [
+      "slider",
+      "input",
+      "touch",
+      "keyboard",
+      "accessibility"
+    ],
+    "when": "Someone adjusts a numeric value.",
+    "action": "Bind the slider and discrete alternative to one value. Expose the unit, range and current value.",
+    "verify": "Adjust by drag and stepper, then reset with Reduce Motion enabled.",
+    "example": "assets/swift/Sources/FieldKit/ReadingGauge.swift",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/sliders"
+  },
+  {
+    "rule": "Separate content and overlaid controls",
+    "tags": [
+      "materials",
+      "contrast",
+      "color",
+      "glass"
+    ],
+    "when": "A floating control overlaps visually varied content.",
+    "action": "Use native material where appropriate, preserve contrast across the underlying image and provide an opaque fallback.",
+    "verify": "Move the control across the brightest region and inspect both appearances and transparency settings.",
+    "example": "references/foundations.md",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/materials"
+  },
+  {
+    "rule": "Give input a durable name",
+    "tags": [
+      "form",
+      "labels",
+      "errors",
+      "accessibility"
+    ],
+    "when": "A control accepts input or a validation error refers to it.",
+    "action": "Use a persistent visible label and an accessible name. Put specific error text next to the field and associate it programmatically.",
+    "verify": "Focus the field before and after an error. Inspect its name, invalid state and description.",
+    "example": "assets/web/controls.html",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/text-fields"
+  },
+  {
+    "rule": "Choose the platform input model",
+    "tags": [
+      "watch",
+      "tv",
+      "vision",
+      "spatial",
+      "remote",
+      "crown"
+    ],
+    "when": "A familiar task moves to a different device.",
+    "action": "Adapt navigation and target spacing to remote focus, Crown input or spatial selection. Verify on the supported device class.",
+    "verify": "Walk the critical path using only the intended input. Note which hardware checks remain open.",
+    "example": "references/platforms.md",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/inputs"
+  },
+  {
+    "rule": "Request permission in context",
+    "tags": [
+      "permission",
+      "onboarding",
+      "privacy"
+    ],
+    "when": "A requested feature needs restricted data.",
+    "action": "Explain the purpose at first use and preserve a concrete alternative when access is denied.",
+    "verify": "Decline permission and complete the permitted portion of the task.",
+    "example": "references/flows.md",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/privacy"
+  },
+  {
+    "rule": "Keep the primary object visible",
+    "tags": [
+      "hierarchy",
+      "art",
+      "direction",
+      "editorial",
+      "dashboard"
+    ],
+    "when": "The screen is a collection, workspace or instrument.",
+    "action": "Choose a visual treatment that helps the user identify, compare or edit the actual product object.",
+    "verify": "Name the first visible object, action and completion signal at compact and wide sizes.",
+    "example": "references/decisions.md",
+    "source": "https://developer.apple.com/design/human-interface-guidelines/design-principles"
+  }
+]

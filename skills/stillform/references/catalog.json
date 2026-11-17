@@ -7596,6 +7596,156 @@
   ]
  },
  {
+  "kind": "kit",
+  "title": "App Clips | Figma",
+  "url": "https://www.figma.com/community/file/1367914571662801866/app-clips"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources - visionOS | Figma",
+  "url": "https://www.figma.com/community/file/1253443272911187215/apple-design-resources-visionos"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1367916269438172112/imessage-apps-and-stickers"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1367916969551216595/siri-app-shortcuts"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1367917705471226837/tipkit"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1367917956770293718/wallet"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1540060090060216489/watchos-26"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1540071341298017505/visionos-26"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1645923469870515372/app-icon-template-ios-ipados-and-watchos-27"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1651309003795292092/ios-and-ipados-27"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Design Resources kit",
+  "url": "https://www.figma.com/community/file/1651309434229735362/macos-27"
+ },
+ {
+  "kind": "kit",
+  "title": "Apple Pay | Figma",
+  "url": "https://www.figma.com/community/file/1367915141082663884/apple-pay"
+ },
+ {
+  "kind": "kit",
+  "title": "Live Activities | Figma",
+  "url": "https://www.figma.com/community/file/1367915437752334285/live-activities"
+ },
+ {
+  "kind": "kit",
+  "title": "Sign in with Apple | Figma",
+  "url": "https://www.figma.com/community/file/1367916685468040146/sign-in-with-apple"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/2b12618d-596c-41fd-8488-132bff9535e7"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/57153a31-3379-4737-8ac6-dbfd6525f052"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/7cd7dbf4-41b2-4e90-bb00-2796ced3cf2b"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/84ba051b-c6ad-48c5-8106-28185947754a"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/85a0f9d2-d76c-42f9-b681-6225882d8024"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/a443d962-d989-4c5b-b1db-fb7fb3946995"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/b0fa95e1-e12d-4694-895f-a70f39b8f313"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/b99f22e1-235e-481b-9ccd-aa7d8f31fedc"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/d1e8992f-14c2-4eef-b29d-24a32c0c0ef9"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/d6cd3d23-7aec-43d5-acb9-52f720ff48b7"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/dd2ce40a-097e-486b-9053-b60088e1d6c3"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/e6ed1af0-508c-4fd5-bc6f-05f7ccb91c6e"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/eb13bfe1-2ddb-4f87-b92c-740a36abed7a"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://sketch.com/s/fbd2fa90-fadd-403a-b319-0f4d7c04ae5f"
+ },
+ {
+  "kind": "kit",
+  "title": "Sketch",
+  "url": "https://www.sketch.com/s/04c24d8b-38fb-4afb-8836-36617e022f02"
+ },
+ {
+  "kind": "kit",
+  "title": "Tap to Pay on iPhone | Figma",
+  "url": "https://www.figma.com/community/file/1367917199004804052/tap-to-pay-on-iphone"
+ },
+ {
   "kind": "resource",
   "title": "2020 Apple Design Award Winners - Apple Design Awards",
   "url": "https://developer.apple.com/design/awards/2020"
@@ -8312,1467 +8462,1467 @@
  },
  {
   "kind": "video",
-  "title": "60-Second Prototyping - WWDC17 - Videos",
+  "title": "60-Second Prototyping - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/818"
  },
  {
   "kind": "video",
-  "title": "Accessibility by design: An Apple Watch for everyone (ASL) - WWDC21 - Videos",
+  "title": "Accessibility by design: An Apple Watch for everyone (ASL) - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/110142"
  },
  {
   "kind": "video",
-  "title": "Accessibility by design: An Apple Watch for everyone - WWDC21 - Videos",
+  "title": "Accessibility by design: An Apple Watch for everyone - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10308"
  },
  {
   "kind": "video",
-  "title": "Add personality to your app through UX writing - WWDC24 - Videos",
+  "title": "Add personality to your app through UX writing - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10140"
  },
  {
   "kind": "video",
-  "title": "Add rich graphics to your SwiftUI app - WWDC21 - Videos",
+  "title": "Add rich graphics to your SwiftUI app - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10021"
  },
  {
   "kind": "video",
-  "title": "Add SharePlay to your app - WWDC23 - Videos",
+  "title": "Add SharePlay to your app - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10239"
  },
  {
   "kind": "video",
-  "title": "Add support for Matter in your smart home app - WWDC21 - Videos",
+  "title": "Add support for Matter in your smart home app - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10298"
  },
  {
   "kind": "video",
-  "title": "Adopt the new look of macOS - WWDC20 - Videos",
+  "title": "Adopt the new look of macOS - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10104"
  },
  {
   "kind": "video",
-  "title": "Adopt Variable Color in SF Symbols - WWDC22 - Videos",
+  "title": "Adopt Variable Color in SF Symbols - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10158"
  },
  {
   "kind": "video",
-  "title": "AllTrails: Momentum without a rewrite - Meet with Apple - Videos",
+  "title": "AllTrails: Momentum without a rewrite - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/274"
  },
  {
   "kind": "video",
-  "title": "Animate symbols in your app - WWDC23 - Videos",
+  "title": "Animate symbols in your app - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10258"
  },
  {
   "kind": "video",
-  "title": "App accessibility for Switch Control - WWDC20 - Videos",
+  "title": "App accessibility for Switch Control - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10019"
  },
  {
   "kind": "video",
-  "title": "App Icon Design - WWDC17 - Videos",
+  "title": "App Icon Design - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/822"
  },
  {
   "kind": "video",
-  "title": "Apple Design Awards (ASL) - WWDC22 - Videos",
+  "title": "Apple Design Awards (ASL) - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/113"
  },
  {
   "kind": "video",
-  "title": "Apple Design Awards - WWDC19 - Videos",
+  "title": "Apple Design Awards - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/104"
  },
  {
   "kind": "video",
-  "title": "Apple Design Awards - WWDC22 - Videos",
+  "title": "Apple Design Awards - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/103"
  },
  {
   "kind": "video",
-  "title": "Apple Watch Design Tips and Tricks - WWDC15 - Videos",
+  "title": "Apple Watch Design Tips and Tricks - WWDC15",
   "url": "https://developer.apple.com/videos/play/wwdc2015/805"
  },
  {
   "kind": "video",
-  "title": "Better together: SwiftUI and RealityKit - WWDC25 - Videos",
+  "title": "Better together: SwiftUI and RealityKit - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/274"
  },
  {
   "kind": "video",
-  "title": "Bring Swift Charts to the third dimension - WWDC25 - Videos",
+  "title": "Bring Swift Charts to the third dimension - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/313"
  },
  {
   "kind": "video",
-  "title": "Bringing Cyberpunk 2077 to Mac - WWDC26 - Videos",
+  "title": "Bringing Cyberpunk 2077 to Mac - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/356"
  },
  {
   "kind": "video",
-  "title": "Build a research and care app, part 1: Setup onboarding - WWDC21 - Videos",
+  "title": "Build a research and care app, part 1: Setup onboarding - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10068"
  },
  {
   "kind": "video",
-  "title": "Build a SwiftUI app with the new design - WWDC25 - Videos",
+  "title": "Build a SwiftUI app with the new design - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/323"
  },
  {
   "kind": "video",
-  "title": "Build a UIKit app with the new design - WWDC25 - Videos",
+  "title": "Build a UIKit app with the new design - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/284"
  },
  {
   "kind": "video",
-  "title": "Build a workout app for Apple Watch - WWDC21 - Videos",
+  "title": "Build a workout app for Apple Watch - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10009"
  },
  {
   "kind": "video",
-  "title": "Build an AppKit app with the new design - WWDC25 - Videos",
+  "title": "Build an AppKit app with the new design - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/310"
  },
  {
   "kind": "video",
-  "title": "Build custom workouts with WorkoutKit - WWDC23 - Videos",
+  "title": "Build custom workouts with WorkoutKit - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10016"
  },
  {
   "kind": "video",
-  "title": "Build document-based apps in SwiftUI - WWDC20 - Videos",
+  "title": "Build document-based apps in SwiftUI - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10039"
  },
  {
   "kind": "video",
-  "title": "Build for the iPadOS pointer - WWDC20 - Videos",
+  "title": "Build for the iPadOS pointer - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10093"
  },
  {
   "kind": "video",
-  "title": "Build great games for spatial computing - WWDC23 - Videos",
+  "title": "Build great games for spatial computing - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10096"
  },
  {
   "kind": "video",
-  "title": "Build intelligent Siri experiences with App Schemas - WWDC26 - Videos",
+  "title": "Build intelligent Siri experiences with App Schemas - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/240"
  },
  {
   "kind": "video",
-  "title": "Build light and fast App Clips - WWDC21 - Videos",
+  "title": "Build light and fast App Clips - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10013"
  },
  {
   "kind": "video",
-  "title": "Build SwiftUI apps for tvOS - WWDC20 - Videos",
+  "title": "Build SwiftUI apps for tvOS - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10042"
  },
  {
   "kind": "video",
-  "title": "Building Great Shortcuts - WWDC19 - Videos",
+  "title": "Building Great Shortcuts - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/805"
  },
  {
   "kind": "video",
-  "title": "Communicate your brand identity on iOS - WWDC26 - Videos",
+  "title": "Communicate your brand identity on iOS - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/251"
  },
  {
   "kind": "video",
-  "title": "Communication Between Designers and Engineers - WWDC17 - Videos",
+  "title": "Communication Between Designers and Engineers - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/809"
  },
  {
   "kind": "video",
-  "title": "Complications and widgets: Reloaded - WWDC22 - Videos",
+  "title": "Complications and widgets: Reloaded - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10050"
  },
  {
   "kind": "video",
-  "title": "Compose advanced graphics effects with SwiftUI - WWDC26 - Videos",
+  "title": "Compose advanced graphics effects with SwiftUI - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/322"
  },
  {
   "kind": "video",
-  "title": "Compose custom layouts with SwiftUI - WWDC22 - Videos",
+  "title": "Compose custom layouts with SwiftUI - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10056"
  },
  {
   "kind": "video",
-  "title": "Craft clear names for features and labels in your app - WWDC26 - Videos",
+  "title": "Craft clear names for features and labels in your app - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/290"
  },
  {
   "kind": "video",
-  "title": "Create a great video playback experience - WWDC22 - Videos",
+  "title": "Create a great video playback experience - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10147"
  },
  {
   "kind": "video",
-  "title": "Create accessible spatial experiences - WWDC23 - Videos",
+  "title": "Create accessible spatial experiences - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10034"
  },
  {
   "kind": "video",
-  "title": "Create animated symbols - WWDC23 - Videos",
+  "title": "Create animated symbols - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10257"
  },
  {
   "kind": "video",
-  "title": "Create custom environments for your immersive apps in visionOS - WWDC24 - Videos",
+  "title": "Create custom environments for your immersive apps in visionOS - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10087"
  },
  {
   "kind": "video",
-  "title": "Create custom hover effects in visionOS - WWDC24 - Videos",
+  "title": "Create custom hover effects in visionOS - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10152"
  },
  {
   "kind": "video",
-  "title": "Create custom symbols - WWDC21 - Videos",
+  "title": "Create custom symbols - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10250"
  },
  {
   "kind": "video",
-  "title": "Create custom visual effects with SwiftUI - WWDC24 - Videos",
+  "title": "Create custom visual effects with SwiftUI - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10151"
  },
  {
   "kind": "video",
-  "title": "Create icons with Icon Composer - WWDC25 - Videos",
+  "title": "Create icons with Icon Composer - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/361"
  },
  {
   "kind": "video",
-  "title": "Create UI prototypes using agents in Xcode - WWDC26 - Videos",
+  "title": "Create UI prototypes using agents in Xcode - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/227"
  },
  {
   "kind": "video",
-  "title": "Deliver a great playback experience on tvOS - WWDC21 - Videos",
+  "title": "Deliver a great playback experience on tvOS - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10191"
  },
  {
   "kind": "video",
-  "title": "Deliver workout insights with HealthKit workout zones - WWDC26 - Videos",
+  "title": "Deliver workout insights with HealthKit workout zones - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/207"
  },
  {
   "kind": "video",
-  "title": "Design advanced games for Apple platforms - WWDC24 - Videos",
+  "title": "Design advanced games for Apple platforms - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10085"
  },
  {
   "kind": "video",
-  "title": "Design an effective chart - WWDC22 - Videos",
+  "title": "Design an effective chart - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110340"
  },
  {
   "kind": "video",
-  "title": "Design and build apps for watchOS 10 - WWDC23 - Videos",
+  "title": "Design and build apps for watchOS 10 - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10138"
  },
  {
   "kind": "video",
-  "title": "Design app experiences with charts - WWDC22 - Videos",
+  "title": "Design app experiences with charts - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110342"
  },
  {
   "kind": "video",
-  "title": "Design App Intents for system experiences - WWDC24 - Videos",
+  "title": "Design App Intents for system experiences - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10176"
  },
  {
   "kind": "video",
-  "title": "Design App Shortcuts - WWDC22 - Videos",
+  "title": "Design App Shortcuts - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10169"
  },
  {
   "kind": "video",
-  "title": "Design considerations for vision and motion - WWDC23 - Videos",
+  "title": "Design considerations for vision and motion - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10078"
  },
  {
   "kind": "video",
-  "title": "Design dynamic Live Activities - WWDC23 - Videos",
+  "title": "Design dynamic Live Activities - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10194"
  },
  {
   "kind": "video",
-  "title": "Design for Arabic - WWDC22 - Videos",
+  "title": "Design for Arabic - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10034"
  },
  {
   "kind": "video",
-  "title": "Design for Arabic · صمّم بالعربي - WWDC22 - Videos",
+  "title": "Design for Arabic · صمّم بالعربي - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110441"
  },
  {
   "kind": "video",
-  "title": "Design for Collaboration with Messages - WWDC22 - Videos",
+  "title": "Design for Collaboration with Messages - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10015"
  },
  {
   "kind": "video",
-  "title": "Design for Game Center - WWDC20 - Videos",
+  "title": "Design for Game Center - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10145"
  },
  {
   "kind": "video",
-  "title": "Design for Group Activities - WWDC21 - Videos",
+  "title": "Design for Group Activities - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10184"
  },
  {
   "kind": "video",
-  "title": "Design for intelligence: Apps, evolved - WWDC20 - Videos",
+  "title": "Design for intelligence: Apps, evolved - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10086"
  },
  {
   "kind": "video",
-  "title": "Design for intelligence: Discover new opportunities - WWDC20 - Videos",
+  "title": "Design for intelligence: Discover new opportunities - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10088"
  },
  {
   "kind": "video",
-  "title": "Design for intelligence: Make friends with \"The System\" - WWDC20 - Videos",
+  "title": "Design for intelligence: Make friends with \"The System\" - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10087"
  },
  {
   "kind": "video",
-  "title": "Design for intelligence: Meet people where they are - WWDC20 - Videos",
+  "title": "Design for intelligence: Meet people where they are - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10200"
  },
  {
   "kind": "video",
-  "title": "Design for iPhone Duo - Tech Talks - Videos",
+  "title": "Design for iPhone Duo - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/111466"
  },
  {
   "kind": "video",
-  "title": "Design for location privacy - WWDC20 - Videos",
+  "title": "Design for location privacy - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10162"
  },
  {
   "kind": "video",
-  "title": "Design for Safari 15 - WWDC21 - Videos",
+  "title": "Design for Safari 15 - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10029"
  },
  {
   "kind": "video",
-  "title": "Design for spatial input - WWDC23 - Videos",
+  "title": "Design for spatial input - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10073"
  },
  {
   "kind": "video",
-  "title": "Design for spatial interaction - WWDC21 - Videos",
+  "title": "Design for spatial interaction - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10245"
  },
  {
   "kind": "video",
-  "title": "Design for spatial user interfaces - WWDC23 - Videos",
+  "title": "Design for spatial user interfaces - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10076"
  },
  {
   "kind": "video",
-  "title": "Design for the iPadOS pointer - WWDC20 - Videos",
+  "title": "Design for the iPadOS pointer - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10640"
  },
  {
   "kind": "video",
-  "title": "Design for touch on Mac - Tech Talks - Videos",
+  "title": "Design for touch on Mac - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/111456"
  },
  {
   "kind": "video",
-  "title": "Design foundations from idea to interface - WWDC25 - Videos",
+  "title": "Design foundations from idea to interface - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/359"
  },
  {
   "kind": "video",
-  "title": "Design great actions for Shortcuts, Siri, and Suggestions - WWDC21 - Videos",
+  "title": "Design great actions for Shortcuts, Siri, and Suggestions - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10283"
  },
  {
   "kind": "video",
-  "title": "Design great App Clips - WWDC20 - Videos",
+  "title": "Design great App Clips - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10172"
  },
  {
   "kind": "video",
-  "title": "Design great visionOS apps - WWDC24 - Videos",
+  "title": "Design great visionOS apps - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10086"
  },
  {
   "kind": "video",
-  "title": "Design great widgets - WWDC20 - Videos",
+  "title": "Design great widgets - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10103"
  },
  {
   "kind": "video",
-  "title": "Design hover interactions for visionOS - WWDC25 - Videos",
+  "title": "Design hover interactions for visionOS - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/303"
  },
  {
   "kind": "video",
-  "title": "Design immersive environments for visionOS apps and the spatial web - WWDC26 - Videos",
+  "title": "Design immersive environments for visionOS apps and the spatial web - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/234"
  },
  {
   "kind": "video",
-  "title": "Design interactive experiences for visionOS - WWDC24 - Videos",
+  "title": "Design interactive experiences for visionOS - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10096"
  },
  {
   "kind": "video",
-  "title": "Design interactive snippets - WWDC25 - Videos",
+  "title": "Design interactive snippets - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/281"
  },
  {
   "kind": "video",
-  "title": "Design intuitive search experiences - WWDC26 - Videos",
+  "title": "Design intuitive search experiences - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/292"
  },
  {
   "kind": "video",
-  "title": "Design Live Activities for Apple Watch - WWDC24 - Videos",
+  "title": "Design Live Activities for Apple Watch - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10098"
  },
  {
   "kind": "video",
-  "title": "Design no-code games with Reality Composer Pro 3 - WWDC26 - Videos",
+  "title": "Design no-code games with Reality Composer Pro 3 - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/252"
  },
  {
   "kind": "video",
-  "title": "Design Shortcuts for Spotlight - WWDC23 - Videos",
+  "title": "Design Shortcuts for Spotlight - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10193"
  },
  {
   "kind": "video",
-  "title": "Design spatial SharePlay experiences - WWDC23 - Videos",
+  "title": "Design spatial SharePlay experiences - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10075"
  },
  {
   "kind": "video",
-  "title": "Design Tips for Great Games - WWDC17 - Videos",
+  "title": "Design Tips for Great Games - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/811"
  },
  {
   "kind": "video",
-  "title": "Design widgets for the Smart Stack on Apple Watch - WWDC23 - Videos",
+  "title": "Design widgets for the Smart Stack on Apple Watch - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10309"
  },
  {
   "kind": "video",
-  "title": "Design widgets for visionOS - WWDC25 - Videos",
+  "title": "Design widgets for visionOS - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/255"
  },
  {
   "kind": "video",
-  "title": "Design with iOS pickers, menus and actions - WWDC20 - Videos",
+  "title": "Design with iOS pickers, menus and actions - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10205"
  },
  {
   "kind": "video",
-  "title": "Design with SwiftUI - Meet with Apple - Videos",
+  "title": "Design with SwiftUI - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/270"
  },
  {
   "kind": "video",
-  "title": "Design with SwiftUI - WWDC23 - Videos",
+  "title": "Design with SwiftUI - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10115"
  },
  {
   "kind": "video",
-  "title": "Designed for iPad - WWDC20 - Videos",
+  "title": "Designed for iPad - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10206"
  },
  {
   "kind": "video",
-  "title": "Designing Audio-Haptic Experiences - WWDC19 - Videos",
+  "title": "Designing Audio-Haptic Experiences - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/810"
  },
  {
   "kind": "video",
-  "title": "Designing Award Winning Apps and Games - WWDC19 - Videos",
+  "title": "Designing Award Winning Apps and Games - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/802"
  },
  {
   "kind": "video",
-  "title": "Designing Fluid Interfaces - WWDC18 - Videos",
+  "title": "Designing Fluid Interfaces - WWDC18",
   "url": "https://developer.apple.com/videos/play/wwdc2018/803"
  },
  {
   "kind": "video",
-  "title": "Designing for a Global Audience - WWDC17 - Videos",
+  "title": "Designing for a Global Audience - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/819"
  },
  {
   "kind": "video",
-  "title": "Designing for Apple Watch - WWDC15 - Videos",
+  "title": "Designing for Apple Watch - WWDC15",
   "url": "https://developer.apple.com/videos/play/wwdc2015/802"
  },
  {
   "kind": "video",
-  "title": "Designing for Apple Watch Series 4 - Tech Talks - Videos",
+  "title": "Designing for Apple Watch Series 4 - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/802"
  },
  {
   "kind": "video",
-  "title": "Designing for iPhone X - Tech Talks - Videos",
+  "title": "Designing for iPhone X - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/801"
  },
  {
   "kind": "video",
-  "title": "Designing for Subscription Success - Tech Talks - Videos",
+  "title": "Designing for Subscription Success - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/803"
  },
  {
   "kind": "video",
-  "title": "Designing Glyphs - WWDC17 - Videos",
+  "title": "Designing Glyphs - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/823"
  },
  {
   "kind": "video",
-  "title": "Designing Great ML Experiences - WWDC19 - Videos",
+  "title": "Designing Great ML Experiences - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/803"
  },
  {
   "kind": "video",
-  "title": "Designing Great Shortcuts - WWDC19 - Videos",
+  "title": "Designing Great Shortcuts - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/806"
  },
  {
   "kind": "video",
-  "title": "Designing iPad Apps for Mac - WWDC19 - Videos",
+  "title": "Designing iPad Apps for Mac - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/809"
  },
  {
   "kind": "video",
-  "title": "Designing Notifications - WWDC18 - Videos",
+  "title": "Designing Notifications - WWDC18",
   "url": "https://developer.apple.com/videos/play/wwdc2018/806"
  },
  {
   "kind": "video",
-  "title": "Designing Sound - WWDC17 - Videos",
+  "title": "Designing Sound - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/803"
  },
  {
   "kind": "video",
-  "title": "Develop your first immersive app - WWDC23 - Videos",
+  "title": "Develop your first immersive app - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10203"
  },
  {
   "kind": "video",
-  "title": "Discover Apple-Hosted Background Assets - WWDC25 - Videos",
+  "title": "Discover Apple-Hosted Background Assets - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/325"
  },
  {
   "kind": "video",
-  "title": "Discover geometry-aware audio with the Physical Audio Spatialization Engine (PHASE) - WWDC21 - Videos",
+  "title": "Discover geometry-aware audio with the Physical Audio Spatialization Engine (PHASE) - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10079"
  },
  {
   "kind": "video",
-  "title": "Discover machine learning & AI frameworks on Apple platforms - WWDC25 - Videos",
+  "title": "Discover machine learning & AI frameworks on Apple platforms - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/360"
  },
  {
   "kind": "video",
-  "title": "Discover new capabilities in the App Intents framework - WWDC26 - Videos",
+  "title": "Discover new capabilities in the App Intents framework - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/345"
  },
  {
   "kind": "video",
-  "title": "Discover the Apple Design Resources - Tech Talks - Videos",
+  "title": "Discover the Apple Design Resources - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/111427"
  },
  {
   "kind": "video",
-  "title": "Discoverable design - WWDC21 - Videos",
+  "title": "Discoverable design - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10126"
  },
  {
   "kind": "video",
-  "title": "Dive into lazy stacks and scrolling with SwiftUI - WWDC26 - Videos",
+  "title": "Dive into lazy stacks and scrolling with SwiftUI - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/321"
  },
  {
   "kind": "video",
-  "title": "Elevate the design of your iPad app - WWDC25 - Videos",
+  "title": "Elevate the design of your iPad app - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/208"
  },
  {
   "kind": "video",
-  "title": "Elevate your tab and sidebar experience in iPadOS - WWDC24 - Videos",
+  "title": "Elevate your tab and sidebar experience in iPadOS - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10147"
  },
  {
   "kind": "video",
-  "title": "Engage players with the Apple Games app - WWDC25 - Videos",
+  "title": "Engage players with the Apple Games app - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/215"
  },
  {
   "kind": "video",
-  "title": "Enhance collaboration experiences with Messages - WWDC22 - Videos",
+  "title": "Enhance collaboration experiences with Messages - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10095"
  },
  {
   "kind": "video",
-  "title": "Enhance your app’s multilingual experience - WWDC25 - Videos",
+  "title": "Enhance your app’s multilingual experience - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/222"
  },
  {
   "kind": "video",
-  "title": "Enhance your UI animations and transitions - WWDC24 - Videos",
+  "title": "Enhance your UI animations and transitions - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10145"
  },
  {
   "kind": "video",
-  "title": "Essential Design Principles - WWDC17 - Videos",
+  "title": "Essential Design Principles - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/802"
  },
  {
   "kind": "video",
-  "title": "Evaluate and optimize voice interaction for your app - WWDC20 - Videos",
+  "title": "Evaluate and optimize voice interaction for your app - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10071"
  },
  {
   "kind": "video",
-  "title": "Evaluate your app for Accessibility Nutrition Labels - WWDC25 - Videos",
+  "title": "Evaluate your app for Accessibility Nutrition Labels - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/224"
  },
  {
   "kind": "video",
-  "title": "Expanding the Sensory Experience with Core Haptics - WWDC19 - Videos",
+  "title": "Expanding the Sensory Experience with Core Haptics - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/223"
  },
  {
   "kind": "video",
-  "title": "Explore advanced App Intents features for Siri and Apple Intelligence - WWDC26 - Videos",
+  "title": "Explore advanced App Intents features for Siri and Apple Intelligence - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/343"
  },
  {
   "kind": "video",
-  "title": "Explore ARKit 5 - WWDC21 - Videos",
+  "title": "Explore ARKit 5 - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10073"
  },
  {
   "kind": "video",
-  "title": "Explore game input in visionOS - WWDC24 - Videos",
+  "title": "Explore game input in visionOS - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10094"
  },
  {
   "kind": "video",
-  "title": "Explore immersive sound design - WWDC23 - Videos",
+  "title": "Explore immersive sound design - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10271"
  },
  {
   "kind": "video",
-  "title": "Explore materials in Reality Composer Pro - WWDC23 - Videos",
+  "title": "Explore materials in Reality Composer Pro - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10202"
  },
  {
   "kind": "video",
-  "title": "Explore multiview video playback in visionOS - WWDC24 - Videos",
+  "title": "Explore multiview video playback in visionOS - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10116"
  },
  {
   "kind": "video",
-  "title": "Explore navigation design for iOS - WWDC22 - Videos",
+  "title": "Explore navigation design for iOS - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10001"
  },
  {
   "kind": "video",
-  "title": "Explore prompt design & safety for on-device foundation models - WWDC25 - Videos",
+  "title": "Explore prompt design & safety for on-device foundation models - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/248"
  },
  {
   "kind": "video",
-  "title": "Explore ShazamKit - WWDC21 - Videos",
+  "title": "Explore ShazamKit - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10044"
  },
  {
   "kind": "video",
-  "title": "Explore the SF Symbols 3 app - WWDC21 - Videos",
+  "title": "Explore the SF Symbols 3 app - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10288"
  },
  {
   "kind": "video",
-  "title": "Explore video experiences for visionOS - WWDC25 - Videos",
+  "title": "Explore video experiences for visionOS - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/304"
  },
  {
   "kind": "video",
-  "title": "Explore WKWebView additions - WWDC21 - Videos",
+  "title": "Explore WKWebView additions - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10032"
  },
  {
   "kind": "video",
-  "title": "Express Yourself! - WWDC17 - Videos",
+  "title": "Express Yourself! - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/820"
  },
  {
   "kind": "video",
-  "title": "Extend Reality Composer Pro 3 functionality with Xcode - WWDC26 - Videos",
+  "title": "Extend Reality Composer Pro 3 functionality with Xcode - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/281"
  },
  {
   "kind": "video",
-  "title": "Get started with building apps for spatial computing - WWDC23 - Videos",
+  "title": "Get started with building apps for spatial computing - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10260"
  },
  {
   "kind": "video",
-  "title": "Get Started with Display P3 - WWDC17 - Videos",
+  "title": "Get Started with Display P3 - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/821"
  },
  {
   "kind": "video",
-  "title": "Get started with Dynamic Type - WWDC24 - Videos",
+  "title": "Get started with Dynamic Type - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10074"
  },
  {
   "kind": "video",
-  "title": "Get started with Game Center - WWDC25 - Videos",
+  "title": "Get started with Game Center - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/214"
  },
  {
   "kind": "video",
-  "title": "Get to know App Intents - WWDC25 - Videos",
+  "title": "Get to know App Intents - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/244"
  },
  {
   "kind": "video",
-  "title": "Get to know the new design system - WWDC25 - Videos",
+  "title": "Get to know the new design system - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/356"
  },
  {
   "kind": "video",
-  "title": "Go further with Complications in WidgetKit - WWDC22 - Videos",
+  "title": "Go further with Complications in WidgetKit - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10051"
  },
  {
   "kind": "video",
-  "title": "Go further with MapKit - WWDC25 - Videos",
+  "title": "Go further with MapKit - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/204"
  },
  {
   "kind": "video",
-  "title": "Great Developer Habits - WWDC19 - Videos",
+  "title": "Great Developer Habits - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/239"
  },
  {
   "kind": "video",
-  "title": "How to Pick a Custom Font - WWDC17 - Videos",
+  "title": "How to Pick a Custom Font - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/815"
  },
  {
   "kind": "video",
-  "title": "Icon Composer for Beginners Group Lab - WWDC26 - Videos",
+  "title": "Icon Composer for Beginners Group Lab - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/8012"
  },
  {
   "kind": "video",
-  "title": "Immerse your app in Spatial Audio - WWDC21 - Videos",
+  "title": "Immerse your app in Spatial Audio - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10265"
  },
  {
   "kind": "video",
-  "title": "Implementing Dark Mode on iOS - WWDC19 - Videos",
+  "title": "Implementing Dark Mode on iOS - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/214"
  },
  {
   "kind": "video",
-  "title": "Ingredients of Great Games - WWDC14 - Videos",
+  "title": "Ingredients of Great Games - WWDC14",
   "url": "https://developer.apple.com/videos/play/wwdc2014/602"
  },
  {
   "kind": "video",
-  "title": "Integrate MusicKit into your app - WWDC26 - Videos",
+  "title": "Integrate MusicKit into your app - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/254"
  },
  {
   "kind": "video",
-  "title": "Integrate privacy into your development process - WWDC25 - Videos",
+  "title": "Integrate privacy into your development process - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/246"
  },
  {
   "kind": "video",
-  "title": "Integrate your custom collaboration app with Messages - WWDC22 - Videos",
+  "title": "Integrate your custom collaboration app with Messages - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10093"
  },
  {
   "kind": "video",
-  "title": "Intentional Design - WWDC18 - Videos",
+  "title": "Intentional Design - WWDC18",
   "url": "https://developer.apple.com/videos/play/wwdc2018/802"
  },
  {
   "kind": "video",
-  "title": "Introducing Core Haptics - WWDC19 - Videos",
+  "title": "Introducing Core Haptics - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/520"
  },
  {
   "kind": "video",
-  "title": "Introducing Photo Segmentation Mattes - WWDC19 - Videos",
+  "title": "Introducing Photo Segmentation Mattes - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/260"
  },
  {
   "kind": "video",
-  "title": "Introducing SF Symbols - WWDC19 - Videos",
+  "title": "Introducing SF Symbols - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/206"
  },
  {
   "kind": "video",
-  "title": "Introducing Sign In with Apple - WWDC19 - Videos",
+  "title": "Introducing Sign In with Apple - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/706"
  },
  {
   "kind": "video",
-  "title": "iPhone Duo Group Lab - Meet with Apple - Videos",
+  "title": "iPhone Duo Group Lab - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/285"
  },
  {
   "kind": "video",
-  "title": "iPhone Duo Group Lab - Meet with Apple - Videos",
+  "title": "iPhone Duo Group Lab - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/286"
  },
  {
   "kind": "video",
-  "title": "iPhone Duo Group Lab - Meet with Apple - Videos",
+  "title": "iPhone Duo Group Lab - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/287"
  },
  {
   "kind": "video",
-  "title": "iPhone Duo Group Lab - Meet with Apple - Videos",
+  "title": "iPhone Duo Group Lab - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/288"
  },
  {
   "kind": "video",
-  "title": "Iterate your spatial scenes faster with Reality Composer Pro 3 - WWDC26 - Videos",
+  "title": "Iterate your spatial scenes faster with Reality Composer Pro 3 - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/280"
  },
  {
   "kind": "video",
-  "title": "Iterative UI Design - WWDC16 - Videos",
+  "title": "Iterative UI Design - WWDC16",
   "url": "https://developer.apple.com/videos/play/wwdc2016/805"
  },
  {
   "kind": "video",
-  "title": "Learn CSS Grid Lanes - WWDC26 - Videos",
+  "title": "Learn CSS Grid Lanes - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/314"
  },
  {
   "kind": "video",
-  "title": "Level up your games - WWDC25 - Videos",
+  "title": "Level up your games - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/209"
  },
  {
   "kind": "video",
-  "title": "Liquid Glass showcase: CNN - Meet with Apple - Videos",
+  "title": "Liquid Glass showcase: CNN - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/256"
  },
  {
   "kind": "video",
-  "title": "Liquid Glass showcase: LTK - Meet with Apple - Videos",
+  "title": "Liquid Glass showcase: LTK - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/254"
  },
  {
   "kind": "video",
-  "title": "Liquid Glass showcase: Slack - Meet with Apple - Videos",
+  "title": "Liquid Glass showcase: Slack - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/255"
  },
  {
   "kind": "video",
-  "title": "Liquid Glass showcase: Tide Guide - Meet with Apple - Videos",
+  "title": "Liquid Glass showcase: Tide Guide - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/257"
  },
  {
   "kind": "video",
-  "title": "Live Activities essentials - WWDC26 - Videos",
+  "title": "Live Activities essentials - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/223"
  },
  {
   "kind": "video",
-  "title": "Love at First Launch - WWDC17 - Videos",
+  "title": "Love at First Launch - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/816"
  },
  {
   "kind": "video",
-  "title": "Make a big impact with small writing changes - WWDC25 - Videos",
+  "title": "Make a big impact with small writing changes - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/404"
  },
  {
   "kind": "video",
-  "title": "Make a great SharePlay experience - WWDC22 - Videos",
+  "title": "Make a great SharePlay experience - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10139"
  },
  {
   "kind": "video",
-  "title": "Make features discoverable with TipKit - WWDC23 - Videos",
+  "title": "Make features discoverable with TipKit - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10229"
  },
  {
   "kind": "video",
-  "title": "Make your app visually accessible - WWDC20 - Videos",
+  "title": "Make your app visually accessible - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10020"
  },
  {
   "kind": "video",
-  "title": "Make your game great with touch - WWDC26 - Videos",
+  "title": "Make your game great with touch - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/358"
  },
  {
   "kind": "video",
-  "title": "Make your UIKit app more flexible - WWDC25 - Videos",
+  "title": "Make your UIKit app more flexible - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/282"
  },
  {
   "kind": "video",
-  "title": "Mastering the Living Room With tvOS - WWDC19 - Videos",
+  "title": "Mastering the Living Room With tvOS - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/211"
  },
  {
   "kind": "video",
-  "title": "Measure health with motion - WWDC21 - Videos",
+  "title": "Measure health with motion - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10287"
  },
  {
   "kind": "video",
-  "title": "Meet Apple Watch Series 7 - Tech Talks - Videos",
+  "title": "Meet Apple Watch Series 7 - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/10884"
  },
  {
   "kind": "video",
-  "title": "Meet Liquid Glass - WWDC25 - Videos",
+  "title": "Meet Liquid Glass - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/219"
  },
  {
   "kind": "video",
-  "title": "Meet Nearby Interaction - WWDC20 - Videos",
+  "title": "Meet Nearby Interaction - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10668"
  },
  {
   "kind": "video",
-  "title": "Meet PaperKit - WWDC25 - Videos",
+  "title": "Meet PaperKit - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/285"
  },
  {
   "kind": "video",
-  "title": "Meet SwiftUI spatial layout - WWDC25 - Videos",
+  "title": "Meet SwiftUI spatial layout - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/273"
  },
  {
   "kind": "video",
-  "title": "Meet the expanded San Francisco font family - WWDC22 - Videos",
+  "title": "Meet the expanded San Francisco font family - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110381"
  },
  {
   "kind": "video",
-  "title": "Meet the HealthKit Medications API - WWDC25 - Videos",
+  "title": "Meet the HealthKit Medications API - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/321"
  },
  {
   "kind": "video",
-  "title": "Meet the Presenter: Design app experiences with charts - WWDC22 - Videos",
+  "title": "Meet the Presenter: Design app experiences with charts - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110531"
  },
  {
   "kind": "video",
-  "title": "Meet the Presenter: Design App Shortcuts - WWDC22 - Videos",
+  "title": "Meet the Presenter: Design App Shortcuts - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110533"
  },
  {
   "kind": "video",
-  "title": "Meet the Presenter: Explore design navigation on iOS - WWDC22 - Videos",
+  "title": "Meet the Presenter: Explore design navigation on iOS - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110484"
  },
  {
   "kind": "video",
-  "title": "Meet the Presenter: Writing for interfaces - WWDC22 - Videos",
+  "title": "Meet the Presenter: Writing for interfaces - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110532"
  },
  {
   "kind": "video",
-  "title": "Meet the presenters: Design with SwiftUI - WWDC23 - Videos",
+  "title": "Meet the presenters: Design with SwiftUI - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10337"
  },
  {
   "kind": "video",
-  "title": "Meet Trust Insights - WWDC26 - Videos",
+  "title": "Meet Trust Insights - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/379"
  },
  {
   "kind": "video",
-  "title": "Meet watchOS 10 - WWDC23 - Videos",
+  "title": "Meet watchOS 10 - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10026"
  },
  {
   "kind": "video",
-  "title": "Move beyond passwords - WWDC21 - Videos",
+  "title": "Move beyond passwords - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10106"
  },
  {
   "kind": "video",
-  "title": "Optimize your custom environments for visionOS - WWDC25 - Videos",
+  "title": "Optimize your custom environments for visionOS - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/305"
  },
  {
   "kind": "video",
-  "title": "Optimizing App Launch - WWDC19 - Videos",
+  "title": "Optimizing App Launch - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/423"
  },
  {
   "kind": "video",
-  "title": "Out of this world... on to Mars - WWDC21 - Videos",
+  "title": "Out of this world... on to Mars - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10317"
  },
  {
   "kind": "video",
-  "title": "Practice audio haptic design - WWDC21 - Videos",
+  "title": "Practice audio haptic design - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10278"
  },
  {
   "kind": "video",
-  "title": "Prepare your app for iPhone Duo - Tech Talks - Videos",
+  "title": "Prepare your app for iPhone Duo - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/111461"
  },
  {
   "kind": "video",
-  "title": "Presenting Design Work - WWDC18 - Videos",
+  "title": "Presenting Design Work - WWDC18",
   "url": "https://developer.apple.com/videos/play/wwdc2018/811"
  },
  {
   "kind": "video",
-  "title": "Principles of great design - WWDC26 - Videos",
+  "title": "Principles of great design - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/250"
  },
  {
   "kind": "video",
-  "title": "Principles of inclusive app design - WWDC25 - Videos",
+  "title": "Principles of inclusive app design - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/316"
  },
  {
   "kind": "video",
-  "title": "Principles of spatial design - WWDC23 - Videos",
+  "title": "Principles of spatial design - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10072"
  },
  {
   "kind": "video",
-  "title": "Prototyping: Fake It Till You Make It - WWDC14 - Videos",
+  "title": "Prototyping: Fake It Till You Make It - WWDC14",
   "url": "https://developer.apple.com/videos/play/wwdc2014/223"
  },
  {
   "kind": "video",
-  "title": "Q&A: Human Interface Guidelines - WWDC22 - Videos",
+  "title": "Q&A: Human Interface Guidelines - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/110530"
  },
  {
   "kind": "video",
-  "title": "Q&A: Prototyping - WWDC22 - Videos",
+  "title": "Q&A: Prototyping - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10175"
  },
  {
   "kind": "video",
-  "title": "Q&A: Spatial design - WWDC23 - Videos",
+  "title": "Q&A: Spatial design - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/111243"
  },
  {
   "kind": "video",
-  "title": "Q&A: Spatial design - WWDC23 - Videos",
+  "title": "Q&A: Spatial design - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/111324"
  },
  {
   "kind": "video",
-  "title": "Q&A: UX writing - WWDC23 - Videos",
+  "title": "Q&A: UX writing - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/111484"
  },
  {
   "kind": "video",
-  "title": "Q&A: watchOS 10 design - WWDC23 - Videos",
+  "title": "Q&A: watchOS 10 design - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/111520"
  },
  {
   "kind": "video",
-  "title": "Q&A: Widgets in the Smart Stack on watchOS - WWDC23 - Videos",
+  "title": "Q&A: Widgets in the Smart Stack on watchOS - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/111522"
  },
  {
   "kind": "video",
-  "title": "Qualities of great AR experiences - WWDC22 - Videos",
+  "title": "Qualities of great AR experiences - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10131"
  },
  {
   "kind": "video",
-  "title": "Raise the bar with iPhone Duo - Tech Talks - Videos",
+  "title": "Raise the bar with iPhone Duo - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/111462"
  },
  {
   "kind": "video",
-  "title": "Reaching the Big Screen with AirPlay 2 - WWDC19 - Videos",
+  "title": "Reaching the Big Screen with AirPlay 2 - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/501"
  },
  {
   "kind": "video",
-  "title": "Read between the strokes with PencilKit - WWDC26 - Videos",
+  "title": "Read between the strokes with PencilKit - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/203"
  },
  {
   "kind": "video",
-  "title": "Rediscover the HTML select element - WWDC26 - Videos",
+  "title": "Rediscover the HTML select element - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/315"
  },
  {
   "kind": "video",
-  "title": "Refine accessibility for custom controls - WWDC26 - Videos",
+  "title": "Refine accessibility for custom controls - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/220"
  },
  {
   "kind": "video",
-  "title": "ResearchKit and CareKit Reimagined - WWDC19 - Videos",
+  "title": "ResearchKit and CareKit Reimagined - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/217"
  },
  {
   "kind": "video",
-  "title": "Rev up your CarPlay app - WWDC26 - Videos",
+  "title": "Rev up your CarPlay app - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/212"
  },
  {
   "kind": "video",
-  "title": "Rich Notifications - WWDC17 - Videos",
+  "title": "Rich Notifications - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/817"
  },
  {
   "kind": "video",
-  "title": "Say hello to the new look of app icons - WWDC25 - Videos",
+  "title": "Say hello to the new look of app icons - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/220"
  },
  {
   "kind": "video",
-  "title": "Say hello to the next generation of CarPlay design system - WWDC24 - Videos",
+  "title": "Say hello to the next generation of CarPlay design system - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10112"
  },
  {
   "kind": "video",
-  "title": "Send communication and Time Sensitive notifications - WWDC21 - Videos",
+  "title": "Send communication and Time Sensitive notifications - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10091"
  },
  {
   "kind": "video",
-  "title": "Set the scene with SwiftUI in visionOS - WWDC25 - Videos",
+  "title": "Set the scene with SwiftUI in visionOS - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/290"
  },
  {
   "kind": "video",
-  "title": "SF Symbols 2 - WWDC20 - Videos",
+  "title": "SF Symbols 2 - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10207"
  },
  {
   "kind": "video",
-  "title": "SF Symbols in SwiftUI - WWDC21 - Videos",
+  "title": "SF Symbols in SwiftUI - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10349"
  },
  {
   "kind": "video",
-  "title": "Share visionOS experiences with nearby people - WWDC25 - Videos",
+  "title": "Share visionOS experiences with nearby people - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/318"
  },
  {
   "kind": "video",
-  "title": "Showcase: Learn how apps are integrating the new design and Liquid Glass - Meet with Apple - Videos",
+  "title": "Showcase: Learn how apps are integrating the new design and Liquid Glass - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/208"
  },
  {
   "kind": "video",
-  "title": "Simplify sign in for your tvOS apps - WWDC21 - Videos",
+  "title": "Simplify sign in for your tvOS apps - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10279"
  },
  {
   "kind": "video",
-  "title": "Size Classes and Core Components - WWDC17 - Videos",
+  "title": "Size Classes and Core Components - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/812"
  },
  {
   "kind": "video",
-  "title": "Stacks, Grids, and Outlines in SwiftUI - WWDC20 - Videos",
+  "title": "Stacks, Grids, and Outlines in SwiftUI - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10031"
  },
  {
   "kind": "video",
-  "title": "Strike a pose with adaptive layouts on iPhone Duo - Tech Talks - Videos",
+  "title": "Strike a pose with adaptive layouts on iPhone Duo - Tech Talks",
   "url": "https://developer.apple.com/videos/play/tech-talks/111463"
  },
  {
   "kind": "video",
-  "title": "Supercharge your spatial workflows with Reality Composer Pro 3 - WWDC26 - Videos",
+  "title": "Supercharge your spatial workflows with Reality Composer Pro 3 - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/393"
  },
  {
   "kind": "video",
-  "title": "Support Full Keyboard Access in your iOS app - WWDC21 - Videos",
+  "title": "Support Full Keyboard Access in your iOS app - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10120"
  },
  {
   "kind": "video",
-  "title": "Support HDR images in your app - WWDC23 - Videos",
+  "title": "Support HDR images in your app - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10181"
  },
  {
   "kind": "video",
-  "title": "SwiftUI on the Mac: The finishing touches - WWDC21 - Videos",
+  "title": "SwiftUI on the Mac: The finishing touches - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10289"
  },
  {
   "kind": "video",
-  "title": "Tailor the VoiceOver experience in your data-rich apps - WWDC21 - Videos",
+  "title": "Tailor the VoiceOver experience in your data-rich apps - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10121"
  },
  {
   "kind": "video",
-  "title": "Tap into virtual and physical game controllers - WWDC21 - Videos",
+  "title": "Tap into virtual and physical game controllers - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10081"
  },
  {
   "kind": "video",
-  "title": "The details of UI typography - WWDC20 - Videos",
+  "title": "The details of UI typography - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10175"
  },
  {
   "kind": "video",
-  "title": "The Life of a Button - WWDC18 - Videos",
+  "title": "The Life of a Button - WWDC18",
   "url": "https://developer.apple.com/videos/play/wwdc2018/804"
  },
  {
   "kind": "video",
-  "title": "The practice of inclusive design - WWDC21 - Videos",
+  "title": "The practice of inclusive design - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10275"
  },
  {
   "kind": "video",
-  "title": "The process of inclusive design - WWDC21 - Videos",
+  "title": "The process of inclusive design - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10304"
  },
  {
   "kind": "video",
-  "title": "The Push Notifications primer - WWDC20 - Videos",
+  "title": "The Push Notifications primer - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10095"
  },
  {
   "kind": "video",
-  "title": "The Qualities of Great Design - WWDC18 - Videos",
+  "title": "The Qualities of Great Design - WWDC18",
   "url": "https://developer.apple.com/videos/play/wwdc2018/801"
  },
  {
   "kind": "video",
-  "title": "The winners of the 2020 Apple Design Awards - WWDC20 - Videos",
+  "title": "The winners of the 2020 Apple Design Awards - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/20022"
  },
  {
   "kind": "video",
-  "title": "Touch on Mac Group Lab - Meet with Apple - Videos",
+  "title": "Touch on Mac Group Lab - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/292"
  },
  {
   "kind": "video",
-  "title": "Touch on Mac Group Lab - Meet with Apple - Videos",
+  "title": "Touch on Mac Group Lab - Meet with Apple",
   "url": "https://developer.apple.com/videos/play/meet-with-apple/293"
  },
  {
   "kind": "video",
-  "title": "Track workouts with HealthKit on iOS and iPadOS - WWDC25 - Videos",
+  "title": "Track workouts with HealthKit on iOS and iPadOS - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/322"
  },
  {
   "kind": "video",
-  "title": "Turbocharge your app for CarPlay - WWDC25 - Videos",
+  "title": "Turbocharge your app for CarPlay - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/216"
  },
  {
   "kind": "video",
-  "title": "Unlock the power of places with MapKit - WWDC24 - Videos",
+  "title": "Unlock the power of places with MapKit - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10097"
  },
  {
   "kind": "video",
-  "title": "Unwrap PaperKit - WWDC26 - Videos",
+  "title": "Unwrap PaperKit - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/372"
  },
  {
   "kind": "video",
-  "title": "Visual Design and Accessibility - WWDC19 - Videos",
+  "title": "Visual Design and Accessibility - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/244"
  },
  {
   "kind": "video",
-  "title": "VoiceOver efficiency with custom rotors - WWDC20 - Videos",
+  "title": "VoiceOver efficiency with custom rotors - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10116"
  },
  {
   "kind": "video",
-  "title": "What's new in App Clips - WWDC21 - Videos",
+  "title": "What's new in App Clips - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10012"
  },
  {
   "kind": "video",
-  "title": "What's new in CareKit - WWDC20 - Videos",
+  "title": "What's new in CareKit - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10151"
  },
  {
   "kind": "video",
-  "title": "What's New in iOS Design - WWDC19 - Videos",
+  "title": "What's New in iOS Design - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/808"
  },
  {
   "kind": "video",
-  "title": "What's new in SF Symbols 4 - WWDC22 - Videos",
+  "title": "What's new in SF Symbols 4 - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10157"
  },
  {
   "kind": "video",
-  "title": "What's new in SwiftUI - WWDC21 - Videos",
+  "title": "What's new in SwiftUI - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10018"
  },
  {
   "kind": "video",
-  "title": "What's new in UIKit - WWDC21 - Videos",
+  "title": "What's new in UIKit - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10059"
  },
  {
   "kind": "video",
-  "title": "What's new in watchOS 8 - WWDC21 - Videos",
+  "title": "What's new in watchOS 8 - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10002"
  },
  {
   "kind": "video",
-  "title": "What's new in watchOS design - WWDC20 - Videos",
+  "title": "What's new in watchOS design - WWDC20",
   "url": "https://developer.apple.com/videos/play/wwdc2020/10171"
  },
  {
   "kind": "video",
-  "title": "What’s new in Apple In-App Purchase - WWDC26 - Videos",
+  "title": "What’s new in Apple In-App Purchase - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/210"
  },
  {
   "kind": "video",
-  "title": "What’s new in Apple Pay - WWDC25 - Videos",
+  "title": "What’s new in Apple Pay - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/201"
  },
  {
   "kind": "video",
-  "title": "What’s new in camera capture - WWDC21 - Videos",
+  "title": "What’s new in camera capture - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10047"
  },
  {
   "kind": "video",
-  "title": "What’s new in device management - WWDC24 - Videos",
+  "title": "What’s new in device management - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10143"
  },
  {
   "kind": "video",
-  "title": "What’s New in iOS and macOS Design - WWDC19 - Videos",
+  "title": "What’s New in iOS and macOS Design - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/801"
  },
  {
   "kind": "video",
-  "title": "What’s new in iPad app design - WWDC22 - Videos",
+  "title": "What’s new in iPad app design - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10009"
  },
  {
   "kind": "video",
-  "title": "What’s new in passkeys - WWDC25 - Videos",
+  "title": "What’s new in passkeys - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/279"
  },
  {
   "kind": "video",
-  "title": "What’s new in SF Symbols - WWDC21 - Videos",
+  "title": "What’s new in SF Symbols - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/10097"
  },
  {
   "kind": "video",
-  "title": "What’s new in SF Symbols 5 - WWDC23 - Videos",
+  "title": "What’s new in SF Symbols 5 - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10197"
  },
  {
   "kind": "video",
-  "title": "What’s new in SF Symbols 6 - WWDC24 - Videos",
+  "title": "What’s new in SF Symbols 6 - WWDC24",
   "url": "https://developer.apple.com/videos/play/wwdc2024/10188"
  },
  {
   "kind": "video",
-  "title": "What’s new in SF Symbols 7 - WWDC25 - Videos",
+  "title": "What’s new in SF Symbols 7 - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/337"
  },
  {
   "kind": "video",
-  "title": "What’s new in Shortcuts - WWDC26 - Videos",
+  "title": "What’s new in Shortcuts - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/310"
  },
  {
   "kind": "video",
-  "title": "What’s new in SwiftUI - WWDC26 - Videos",
+  "title": "What’s new in SwiftUI - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/269"
  },
  {
   "kind": "video",
-  "title": "What’s new in the Foundation Models framework - WWDC26 - Videos",
+  "title": "What’s new in the Foundation Models framework - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/241"
  },
  {
   "kind": "video",
-  "title": "What’s new in visionOS 26 - WWDC25 - Videos",
+  "title": "What’s new in visionOS 26 - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/317"
  },
  {
   "kind": "video",
-  "title": "What’s new in Wallet - WWDC26 - Videos",
+  "title": "What’s new in Wallet - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/209"
  },
  {
   "kind": "video",
-  "title": "What’s new in Wallet and Apple Pay - WWDC23 - Videos",
+  "title": "What’s new in Wallet and Apple Pay - WWDC23",
   "url": "https://developer.apple.com/videos/play/wwdc2023/10114"
  },
  {
   "kind": "video",
-  "title": "What’s new in watchOS 26 - WWDC25 - Videos",
+  "title": "What’s new in watchOS 26 - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/334"
  },
  {
   "kind": "video",
-  "title": "What’s new in widgets - WWDC25 - Videos",
+  "title": "What’s new in widgets - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/278"
  },
  {
   "kind": "video",
-  "title": "What’s new in Xcode 26 - WWDC25 - Videos",
+  "title": "What’s new in Xcode 26 - WWDC25",
   "url": "https://developer.apple.com/videos/play/wwdc2025/247"
  },
  {
   "kind": "video",
-  "title": "WidgetKit foundations - WWDC26 - Videos",
+  "title": "WidgetKit foundations - WWDC26",
   "url": "https://developer.apple.com/videos/play/wwdc2026/277"
  },
  {
   "kind": "video",
-  "title": "Writing for interfaces - WWDC22 - Videos",
+  "title": "Writing for interfaces - WWDC22",
   "url": "https://developer.apple.com/videos/play/wwdc2022/10037"
  },
  {
   "kind": "video",
-  "title": "Writing Great Accessibility Labels - WWDC19 - Videos",
+  "title": "Writing Great Accessibility Labels - WWDC19",
   "url": "https://developer.apple.com/videos/play/wwdc2019/254"
  },
  {
   "kind": "video",
-  "title": "Writing Great Alerts - WWDC17 - Videos",
+  "title": "Writing Great Alerts - WWDC17",
   "url": "https://developer.apple.com/videos/play/wwdc2017/813"
  },
  {
   "kind": "video",
-  "title": "WWDC21 Apple Design Awards (ASL) - WWDC21 - Videos",
+  "title": "WWDC21 Apple Design Awards (ASL) - WWDC21",
   "url": "https://developer.apple.com/videos/play/wwdc2021/113"
  }
 ]
