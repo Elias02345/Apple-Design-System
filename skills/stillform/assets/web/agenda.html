@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio agenda · Stillform</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="studies.css">
+<link rel="stylesheet" href="agenda.css">
+<script src="common.js" defer></script>
+<script src="agenda.js" defer></script>
+</head>
+<body class="agenda">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><span class="brand"><i class="mark" aria-hidden="true"></i>Stillform</span>
+<nav aria-label="Field studies"><a href="index.html">Cabinet</a>
+<a href="tide.html">Tide book</a>
+<a href="type.html">Type room</a>
+<a href="controls.html">Controls</a></nav></header>
+<main id="main" tabindex="-1">
+<a href="controls.html">← Control bench</a>
+<div class="section-head section"><div><p class="eyebrow">Studio calendar</p><h1>Agenda</h1></div><button id="new-event" class="primary">New booking</button></div>
+<div class="schedule"><aside class="stack"><h2>Day</h2><label class="field" for="day">Calendar date<input id="day" type="date" required></label>
+<div class="actions"><button id="earlier" aria-label="Previous day">←</button><button id="later" aria-label="Next day">→</button></div>
+<p class="muted">Times use the local studio clock. Bookings stay in this browser.</p></aside>
+<section class="stack" aria-labelledby="day-title"><h2 id="day-title"></h2><p id="day-count" class="muted"></p><ul id="events"></ul><p id="agenda-empty" class="note" hidden>This day is open. Choose New booking to reserve a time.</p></section></div>
+<p id="agenda-state" role="status"></p>
+<dialog id="event-editor" aria-labelledby="event-heading"><form id="event-form" class="stack" novalidate>
+<h2 id="event-heading"></h2><label class="field">Booking name<input id="event-name" required maxlength="70" aria-describedby="event-error"></label>
+<label class="field">Date<input type="date" id="event-date" required aria-describedby="event-error"></label>
+<label class="field">Start time<input type="time" id="event-time" required aria-describedby="event-error"></label>
+<label class="field">Duration<select id="duration"><option value="30">30 minutes</option><option value="60">1 hour</option><option value="90">90 minutes</option></select></label>
+<p id="event-error" class="error" hidden></p><div class="actions"><button type="submit" class="primary">Save booking</button><button type="button" id="cancel-edit">Cancel</button></div>
+</form><div id="discard" class="stack" hidden><h2 id="discard-title" tabindex="-1">Discard this draft?</h2><p>The saved schedule will stay as it was.</p><div class="actions"><button id="keep-editing" class="primary">Keep editing</button><button id="discard-edit">Discard changes</button></div></div></dialog>
+</main>
+</body>
+</html>

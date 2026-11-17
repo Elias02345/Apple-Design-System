@@ -83,7 +83,7 @@ test('a blocked storage provider keeps work usable and reports its lifetime', as
   await page.getByRole('button',{name:'Save specimen'}).click();
   await expect(page.getByRole('dialog')).toContainText('for this visit');
 });
-for (const file of ['index','tide','type','controls','motion']) {
+for (const file of ['index','tide','type','controls','motion','agenda']) {
   for (const mode of ['light','dark']) {
     test(file + ' reflows and passes automated accessibility checks in ' + mode, async ({page}) => {
       const faults=[]; page.on('pageerror',e => faults.push(e.message));
@@ -134,4 +134,28 @@ test('long RTL content in an enlarged proof stays inside a compact viewport',asy
   await page.evaluate(()=>{document.documentElement.dir='rtl'; document.documentElement.style.fontSize='200%';});
   await expect(page.locator('#proof-title')).toHaveCSS('direction','rtl');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+test('agenda retains a conflicting draft, protects dirty dismissal and restores the edited booking',async({page})=>{
+  await page.goto('/agenda.html');
+  await page.getByRole('button',{name:'Edit Paper delivery'}).click();
+  await page.getByLabel('Start time').fill('11:30');
+  await page.getByRole('button',{name:'Save booking'}).click();
+  await expect(page.locator('#event-error')).toContainText('overlaps Proof review');
+  await expect(page.getByLabel('Start time')).toBeFocused();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog',{name:'Discard this draft?'})).toBeVisible();
+  await page.getByRole('button',{name:'Keep editing'}).click();
+  await expect(page.getByLabel('Start time')).toHaveValue('11:30');
+  await page.getByLabel('Start time').fill('12:00');
+  await page.getByRole('button',{name:'Save booking'}).click();
+  await expect(page.getByRole('button',{name:'Edit Paper delivery'})).toBeFocused();
+  await page.reload();
+  await expect(page.locator('#events li').filter({hasText:'Paper delivery'})).toContainText('12:00');
+  await page.getByRole('button',{name:'Next day'}).click();
+  await expect(page.locator('#agenda-empty')).toBeVisible();
+  await page.getByRole('button',{name:'New booking'}).click();
+  await page.getByLabel('Booking name').fill('Discard me');
+  await page.getByRole('button',{name:'Cancel',exact:true}).click();
+  await page.getByRole('button',{name:'Discard changes'}).click();
+  await expect(page.locator('#events li')).toHaveCount(0);
 });

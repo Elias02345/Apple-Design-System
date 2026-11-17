@@ -26,6 +26,8 @@ Download `stillform.zip` from the release and extract its `stillform` directory 
 
 Open [index.html](skills/stillform/assets/web/index.html) from a local copy to use the gallery. From a checkout, `npm run gallery` serves the examples on the loopback address printed in the terminal. The linked HTML files on GitHub open their source.
 
+The [studio agenda](skills/stillform/assets/web/agenda.html) applies the same rules to a scheduling task. Change a booking, deliberately overlap a second appointment, then recover the draft and save. The code tests interval boundaries and restores focus to the rescheduled booking. [Booking editor](skills/stillform/assets/web/agenda.js)
+
 ## Motion in use
 
 | Selection follows intent | A temporary editing surface |

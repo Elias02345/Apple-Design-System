@@ -5,7 +5,7 @@ import FieldKit
     @AppStorage("stillform.fielddesk.v1") private var saved = Data()
     private var restored: Journal? { try? JSONDecoder().decode(Journal.self, from: saved) }
     var body: some Scene {
-        WindowGroup {
+        Window("Field journal", id: "journal") {
             if saved.isEmpty || restored != nil {
                 FieldJournalView(journal: restored ?? .sample) { journal in
                     if let encoded = try? JSONEncoder().encode(journal) { saved = encoded }
