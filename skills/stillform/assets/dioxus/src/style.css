@@ -1,5 +1,4 @@
-:root { color-scheme:light dark }
-body:has(.sf-listening) {margin:0;background:light-dark(#faf9f6,#171916)}
+.sf-listening,.sf-destinations {color-scheme:light dark}
 .sf-listening {--sf-ink:light-dark(#202721,#f2f3ed);--sf-muted:light-dark(#525e54,#b3bfb3);--sf-accent:light-dark(#255b48,#9fd6b8);--sf-rule:light-dark(#b4bcb1,#59665d);--sf-panel:light-dark(#eeefe9,#262d27);color:var(--sf-ink);font:1rem/1.45 system-ui,sans-serif;max-width:58rem;margin:auto;padding:clamp(1rem,5vw,4rem);overflow-wrap:anywhere}
 .sf-listening * {box-sizing:border-box}
 .sf-listening h1 {font:600 clamp(2.8rem,8vw,5.8rem)/1.04 Georgia,serif;letter-spacing:-.055em;margin:.35em 0 .5em}

@@ -1,6 +1,6 @@
 {
   "name": "stillform-design-system",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "description": "Runnable interface field studies and checks for the Stillform agent skill",
   "scripts": {

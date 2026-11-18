@@ -6,11 +6,20 @@ struct ProofStyle {
     open: bool,
 }
 
-const DEFAULT: ProofStyle = ProofStyle { size: 20, open: false };
+const DEFAULT: ProofStyle = ProofStyle {
+    size: 20,
+    open: false,
+};
 
 /// Controlled integer range with a visible value and two exact single-step commands.
 #[component]
-pub fn PrecisionField(label: String, value: u8, min: u8, max: u8, onchange: EventHandler<u8>) -> Element {
+pub fn PrecisionField(
+    label: String,
+    value: u8,
+    min: u8,
+    max: u8,
+    onchange: EventHandler<u8>,
+) -> Element {
     rsx! {
         fieldset { class: "sf-precision",
             legend { "{label} · {value}" }

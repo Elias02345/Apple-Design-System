@@ -1,0 +1,295 @@
+[
+  {
+    "id": "disclosure",
+    "stack": "web",
+    "file": "assets/web/primitives.js",
+    "symbol": "disclosure",
+    "dependencies": [],
+    "check": "Close a disclosure with focus inside. The trigger regains focus."
+  },
+  {
+    "id": "selection",
+    "stack": "web",
+    "file": "assets/web/primitives.js",
+    "symbol": "exclusiveButtons",
+    "dependencies": [],
+    "check": "Pick the middle choice twice. One button remains selected."
+  },
+  {
+    "id": "async-action",
+    "stack": "web",
+    "file": "assets/web/primitives.js",
+    "symbol": "singleTask",
+    "dependencies": [],
+    "check": "Cancel and retry. The earlier operation cannot replace a newer result."
+  },
+  {
+    "id": "booking-editor",
+    "stack": "web",
+    "file": "assets/web/agenda.js",
+    "symbol": null,
+    "dependencies": [
+      "assets/web/agenda.html",
+      "assets/web/common.js",
+      "assets/web/primitives.js",
+      "assets/web/base.css",
+      "assets/web/tokens.css"
+    ],
+    "check": "Resolve a conflict while retaining the other draft fields."
+  },
+  {
+    "id": "collection",
+    "stack": "web",
+    "file": "assets/web/cabinet.js",
+    "symbol": null,
+    "dependencies": [
+      "assets/web/index.html",
+      "assets/web/common.js",
+      "assets/web/primitives.js",
+      "assets/web/base.css",
+      "assets/web/tokens.css"
+    ],
+    "check": "Remove the last saved result and continue with the keyboard."
+  },
+  {
+    "id": "precision",
+    "stack": "web",
+    "file": "assets/web/tide.js",
+    "symbol": null,
+    "dependencies": [
+      "assets/web/tide.html",
+      "assets/web/common.js",
+      "assets/web/primitives.js",
+      "assets/web/base.css",
+      "assets/web/tokens.css"
+    ],
+    "check": "Compare chart, exact table and saved reading after a unit change."
+  },
+  {
+    "id": "undo",
+    "stack": "web",
+    "file": "assets/web/controls.js",
+    "symbol": null,
+    "dependencies": [
+      "assets/web/controls.html",
+      "assets/web/common.js",
+      "assets/web/primitives.js",
+      "assets/web/base.css",
+      "assets/web/tokens.css"
+    ],
+    "check": "Remove a job and undo the removal at its original position."
+  },
+  {
+    "id": "live-proof",
+    "stack": "web",
+    "file": "assets/web/type.js",
+    "symbol": null,
+    "dependencies": [
+      "assets/web/type.html",
+      "assets/web/common.js",
+      "assets/web/primitives.js",
+      "assets/web/base.css",
+      "assets/web/tokens.css"
+    ],
+    "check": "Change the proof and restore its committed text."
+  },
+  {
+    "id": "adaptive-layout",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/controls.dart",
+    "symbol": "AdaptivePanes",
+    "dependencies": [
+      "assets/flutter/lib/cue.dart"
+    ],
+    "check": "Enlarge text and narrow the screen. Both panes remain reachable."
+  },
+  {
+    "id": "selection",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/controls.dart",
+    "symbol": "CueList",
+    "dependencies": [
+      "assets/flutter/lib/cue.dart"
+    ],
+    "check": "The selected row and editor identify the same object."
+  },
+  {
+    "id": "selection",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/lib.rs",
+    "symbol": "CueList",
+    "dependencies": [
+      "assets/dioxus/src/model.rs",
+      "assets/dioxus/src/proof.rs",
+      "assets/dioxus/src/style.css",
+      "assets/dioxus/Cargo.toml"
+    ],
+    "check": "The selected row and editor identify the same object."
+  },
+  {
+    "id": "motion",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/controls.dart",
+    "symbol": "CueStrip",
+    "dependencies": [
+      "assets/flutter/lib/cue.dart"
+    ],
+    "check": "Reduced motion settles the selected marker immediately."
+  },
+  {
+    "id": "motion",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/lib.rs",
+    "symbol": "CueStrip",
+    "dependencies": [
+      "assets/dioxus/src/model.rs",
+      "assets/dioxus/src/proof.rs",
+      "assets/dioxus/src/style.css",
+      "assets/dioxus/Cargo.toml"
+    ],
+    "check": "Reduced motion settles the selected marker immediately."
+  },
+  {
+    "id": "buttons",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/controls.dart",
+    "symbol": "EditorActions",
+    "dependencies": [
+      "assets/flutter/lib/cue.dart"
+    ],
+    "check": "A second activation while pending cannot submit twice."
+  },
+  {
+    "id": "buttons",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/lib.rs",
+    "symbol": "EditorActions",
+    "dependencies": [
+      "assets/dioxus/src/model.rs",
+      "assets/dioxus/src/proof.rs",
+      "assets/dioxus/src/style.css",
+      "assets/dioxus/Cargo.toml"
+    ],
+    "check": "A second activation while pending cannot submit twice."
+  },
+  {
+    "id": "draft-editor",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/cue_desk.dart",
+    "symbol": "CueDesk",
+    "dependencies": [
+      "assets/flutter/lib/cue.dart",
+      "assets/flutter/lib/controls.dart"
+    ],
+    "check": "Attempt a blank save, retry a failed commit and navigate with a dirty draft."
+  },
+  {
+    "id": "draft-editor",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/lib.rs",
+    "symbol": "CueDesk",
+    "dependencies": [
+      "assets/dioxus/src/model.rs",
+      "assets/dioxus/src/proof.rs",
+      "assets/dioxus/src/style.css",
+      "assets/dioxus/Cargo.toml"
+    ],
+    "check": "Attempt a blank save, retry a failed commit and navigate with a dirty draft."
+  },
+  {
+    "id": "precision",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/reading_proof.dart",
+    "symbol": "PrecisionField",
+    "dependencies": [],
+    "check": "Reach each limit with the step buttons and check its disabled state."
+  },
+  {
+    "id": "precision",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/proof.rs",
+    "symbol": "PrecisionField",
+    "dependencies": [
+      "assets/dioxus/src/style.css",
+      "assets/dioxus/Cargo.toml"
+    ],
+    "check": "Reach each limit with the step buttons and check its disabled state."
+  },
+  {
+    "id": "undo",
+    "stack": "flutter",
+    "file": "assets/flutter/lib/reading_proof.dart",
+    "symbol": "ReadingProof",
+    "dependencies": [],
+    "check": "Change both settings, reset, undo, then compare the controls and preview."
+  },
+  {
+    "id": "undo",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/proof.rs",
+    "symbol": "ReadingProof",
+    "dependencies": [
+      "assets/dioxus/src/style.css",
+      "assets/dioxus/Cargo.toml"
+    ],
+    "check": "Change both settings, reset, undo, then compare the controls and preview."
+  },
+  {
+    "id": "adaptive-layout",
+    "stack": "dioxus",
+    "file": "assets/dioxus/src/style.css",
+    "symbol": null,
+    "dependencies": [
+      "assets/dioxus/src/lib.rs"
+    ],
+    "check": "Resize a window during editing. Its draft survives."
+  },
+  {
+    "id": "draft-editor",
+    "stack": "swiftui",
+    "file": "assets/swift/Sources/FieldKit/FieldJournalView.swift",
+    "symbol": "FieldJournalView",
+    "dependencies": [
+      "assets/swift/Sources/FieldKit/Journal.swift"
+    ],
+    "check": "Dismiss a dirty editor and keep its draft."
+  },
+  {
+    "id": "precision",
+    "stack": "swiftui",
+    "file": "assets/swift/Sources/FieldKit/ReadingGauge.swift",
+    "symbol": "ReadingGauge",
+    "dependencies": [],
+    "check": "Compare slider, stepper and reset."
+  },
+  {
+    "id": "watch-input",
+    "stack": "swiftui",
+    "file": "assets/apple-surfaces/Sources/SurfaceKit/WristReading.swift",
+    "symbol": "WristReading",
+    "dependencies": [
+      "assets/apple-surfaces/Sources/SurfaceKit/Station.swift"
+    ],
+    "check": "Verify Crown input on hardware."
+  },
+  {
+    "id": "tv-focus",
+    "stack": "swiftui",
+    "file": "assets/apple-surfaces/Sources/SurfaceKit/StationShelf.swift",
+    "symbol": "StationShelf",
+    "dependencies": [
+      "assets/apple-surfaces/Sources/SurfaceKit/Station.swift"
+    ],
+    "check": "Move focus and activate a station with a remote."
+  },
+  {
+    "id": "spatial-window",
+    "stack": "swiftui",
+    "file": "assets/apple-surfaces/Sources/SurfaceKit/SpatialReading.swift",
+    "symbol": "SpatialReading",
+    "dependencies": [
+      "assets/apple-surfaces/Sources/SurfaceKit/Station.swift"
+    ],
+    "check": "Check readability in the wearer’s environment."
+  }
+]

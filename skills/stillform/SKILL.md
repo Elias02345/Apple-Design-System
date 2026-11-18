@@ -1,6 +1,6 @@
 ---
 name: stillform
-description: Design, implement, critique, and test product interfaces using Apple Human Interface Guidelines, platform conventions, runnable web controls, and SwiftUI examples. Use for interaction design, adaptive layouts, navigation, form recovery, motion, accessibility, and interface refinement.
+description: Design, implement, and test Apple-informed interfaces in Flutter, Rust Dioxus, web, and SwiftUI projects. Use for reusable components, adaptive navigation, editing and recovery, accessible motion, and UX inspection.
 ---
 
 # Stillform
@@ -8,6 +8,8 @@ description: Design, implement, critique, and test product interfaces using Appl
 Start with one sentence describing the person, the object they act on, and the result they need. For an existing product, perform that task through its normal entry point before changing it. Preserve its information architecture, brand and platform conventions unless the brief or a demonstrated usability problem calls for a change.
 
 ## Choose the right material
+
+Identify the project's UI toolkit first. From this folder, run `python scripts/snippet.py flutter`, `dioxus`, `web` or `swiftui` as the stack argument. Select a pattern such as `python scripts/snippet.py dioxus draft-editor --code`. Inspect its dependencies and verification step before integrating it. For other toolkits, use the [porting guide](references/portable.md) and run the behavior checks in the host.
 
 For a task-specific shortlist, run `python scripts/route.py editor form cancellation` from this folder. Each match returns a decision, an acceptance exercise, a working example or reference, and a primary source. Add `--json` for machine-readable handoff.
 

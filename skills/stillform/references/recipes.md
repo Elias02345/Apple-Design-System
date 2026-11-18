@@ -1,5 +1,7 @@
 # Copy working behaviors
 
+For a Flutter package or a Rust Dioxus library with a host-owned persistence callback, start with the [cross-platform recipes](portable.md).
+
 The public DOM helpers live in [primitives.js](../assets/web/primitives.js). Copy that file into a web project or translate the small functions into its component lifecycle. Supply native elements from the application's markup. The associated studies use the same helpers.
 
 ## Single-selection button group

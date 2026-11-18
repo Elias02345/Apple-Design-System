@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.0 — 2026-11-18
+
+- Added reusable Flutter and Rust Dioxus components, a responsive cue editor and an adjustable reading proof in both toolkits.
+- Added framework-aware snippet lookup, host integration recipes, workflow tests and compiled browser captures.
+
 ## v1.1.0 — 2026-11-18
 
 - Agents can search named variants and measure layer bounds in a local Sketch document. The new guide walks through a destructive-button decision using a real kit.

@@ -1,5 +1,7 @@
 # Component and code index
 
+For Flutter, Rust Dioxus, browser and SwiftUI source files, named components and their dependencies, use the [cross-platform index](snippets.json) and [embedding guide](portable.md).
+
 Open the linked pair together. The markup establishes semantics and the script supplies state transitions. The full gallery runs offline by opening [index.html](../assets/web/index.html). A loopback server gives browser storage a consistent origin.
 
 | Need | Code to open | Interaction contract |

@@ -18,15 +18,8 @@ jobs:
         with:
           flutter-version: '3.38.5'
           cache: true
-      - run: flutter pub get
-      - run: dart format lib test
-      - uses: actions/upload-artifact@v4
-        with:
-          name: flutter-checked-sources
-          path: |
-            skills/stillform/assets/flutter/lib
-            skills/stillform/assets/flutter/test
-            skills/stillform/assets/flutter/pubspec.lock
+      - run: flutter pub get --enforce-lockfile
+      - run: dart format --output=none --set-exit-if-changed lib test
       - run: flutter analyze
       - run: flutter test
       - run: flutter build web --release --no-web-resources-cdn

@@ -1,7 +1,12 @@
 use dioxus::prelude::*;
-use stillform_cues::{model::{self, Cue}, CueDesk, SaveFuture, STYLE};
+use stillform_cues::{
+    model::{self, Cue},
+    CueDesk, SaveFuture, STYLE,
+};
 
-fn main() { dioxus::launch(App); }
+fn main() {
+    dioxus::launch(App);
+}
 
 #[component]
 fn App() -> Element {
@@ -10,6 +15,7 @@ fn App() -> Element {
     let initial = session.peek().clone();
     rsx! {
         style { "{STYLE}" }
+        style { ":root {{ color-scheme: light dark }} body {{ margin: 0; background: light-dark(#faf9f6,#171916) }}" }
         nav { class: "sf-destinations", aria_label: "Studies",
             button { aria_pressed: (!proof()).to_string(), onclick: move |_| proof.set(false), "Cues" }
             button { aria_pressed: proof().to_string(), onclick: move |_| proof.set(true), "Type proof" }

@@ -8,7 +8,12 @@ pub type SaveFuture = Pin<Box<dyn Future<Output = Result<(), String>>>>;
 pub const STYLE: &str = include_str!("style.css");
 
 #[component]
-pub fn CueList(cues: Vec<Cue>, selected: usize, disabled: bool, onselect: EventHandler<usize>) -> Element {
+pub fn CueList(
+    cues: Vec<Cue>,
+    selected: usize,
+    disabled: bool,
+    onselect: EventHandler<usize>,
+) -> Element {
     rsx! {
         section { class: "sf-cue-list", aria_label: "Cue sheet",
             h2 { "Cue sheet" }

@@ -2,7 +2,7 @@
 
 # Stillform
 
-An independent, Apple-informed design system for agents building real product interfaces. It pairs interaction rules with executable HTML, CSS, JavaScript and SwiftUI. Each example includes the states that disappear from a polished screenshot, including empty results, interrupted work, failed storage and focus after dismissal.
+An independent, Apple-informed design system for agents building product interfaces in Flutter, Rust with Dioxus, HTML/CSS/JavaScript, and SwiftUI. Working examples cover the states that disappear from a polished screenshot, including empty results, interrupted work, failed saves and focus after dismissal.
 
 **[Read the skill](skills/stillform/SKILL.md)** · **[Find a component](skills/stillform/references/components.md)** · **[Inspect an interface](skills/stillform/references/inspection.md)** · **[Download the release](https://github.com/Elias02345/Apple-Design-System/releases/latest)**
 
@@ -10,11 +10,18 @@ Run `python skills/stillform/scripts/route.py editor form cancellation` for a ta
 
 ## Use the skill
 
+Run `python skills/stillform/scripts/snippet.py flutter` or `python skills/stillform/scripts/snippet.py dioxus` to find reusable source. Each entry identifies the file, component, dependencies and behavior to verify. Add a pattern and `--code` to print its full source unit. [Cross-platform recipes](skills/stillform/references/portable.md)
+
 Download `stillform.zip` from the release and extract its `stillform` directory into `~/.codex/skills/`, or copy [skills/stillform](skills/stillform) from this repository. The resulting path is `~/.codex/skills/stillform/SKILL.md`. For another agent that reads skill folders, use its documented skill location. The examples work offline.
 
 > Use $stillform to redesign the appointment editor. Keep our brand and navigation. Build the edit, cancel, error and retry paths. Test a narrow layout and keyboard-only use. Show what changed after inspecting the result.
 
 ## Working interfaces
+
+| Flutter · listening desk | Rust Dioxus · listening desk |
+| --- | --- |
+| [![Flutter cue sheet and editor with an adaptive layout](showcase/flutter.png)](skills/stillform/assets/flutter/lib/cue_desk.dart) | [![The same cue-editing task rendered by Rust Dioxus](showcase/dioxus.png)](skills/stillform/assets/dioxus/src/lib.rs) |
+| A labeled field, review switch, draft guard and asynchronous save callback in Dart. [Reading proof and precision control](skills/stillform/assets/flutter/lib/reading_proof.dart) | A shared Rust model for web and desktop, keyboard-operable HTML and reversible settings. [Reading proof and precision control](skills/stillform/assets/dioxus/src/proof.rs) |
 
 For a platform-specific detail, give the agent a local Sketch kit and run `python skills/stillform/scripts/sketch.py "Apple iOS 27 UI Kit.sketch" buttons disabled --measure --limit 2`. It returns named variants, layer identifiers and measured bounds directly from the document. [Editable kit guide](skills/stillform/references/kits.md)
 

@@ -5,8 +5,11 @@ class Cue {
   final String title;
   final bool review;
 
-  Cue edit(String title, bool review) => Cue(id, seconds, title.trim(), review: review);
-  String get time => (seconds ~/ 60).toString().padLeft(2, '0') + ':' +
+  Cue edit(String title, bool review) =>
+      Cue(id, seconds, title.trim(), review: review);
+  String get time =>
+      (seconds ~/ 60).toString().padLeft(2, '0') +
+      ':' +
       (seconds % 60).toString().padLeft(2, '0');
 }
 

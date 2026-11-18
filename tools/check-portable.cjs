@@ -34,6 +34,13 @@ async function check(browser, framework) {
     }
     const field = page.getByRole('textbox', {name:'Cue name'});
     await expect(field).toBeVisible({timeout:60000});
+    if (framework === 'dioxus') {
+      await page.addScriptTag({path:require.resolve('axe-core/axe.min.js')});
+      const audit = await page.evaluate(() => axe.run(document, {runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa']}}));
+      if (audit.violations.length) throw Error(JSON.stringify(audit.violations.map(v => [v.id,v.nodes.map(n=>n.target)])));
+      const motion = await page.locator('.sf-cue-strip .active').evaluate(el => getComputedStyle(el).transitionDuration);
+      if (motion !== '0s') throw Error('Reduced motion was ignored');
+    }
     await page.screenshot({path:path.join(output, framework + '.png')});
     if (framework === 'flutter') await field.click();
     await field.fill('Evening arrival');
@@ -48,7 +55,8 @@ async function check(browser, framework) {
     await expect(field).toBeAttached();
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) throw Error('Overflow');
     await page.screenshot({path:path.join(output, framework + '-compact.png')});
-    await page.getByRole('button', {name:/Type proof/i}).click();
+    const destination = framework === 'flutter' ? 'tab' : 'button';
+    await page.getByRole(destination, {name:/Type proof/i}).click();
     await page.getByRole('button', {name:/Increase type size/i}).click();
     await page.getByRole('button', {name:'Reset settings'}).click();
     await page.getByRole('button', {name:'Undo reset'}).click();
@@ -60,7 +68,7 @@ async function check(browser, framework) {
 }
 (async () => {
   await fs.mkdir(output,{recursive:true});
-  const browser = await chromium.launch({args:['--no-sandbox']});
+  const browser = await chromium.launch({executablePath:process.env.EDGE_PATH, args:['--no-sandbox']});
   try { for (const framework of ['dioxus','flutter']) await check(browser,framework); }
   finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

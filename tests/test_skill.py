@@ -12,6 +12,22 @@ repo=Path(__file__).resolve().parents[1]
 skill=repo/"skills/stillform"
 
 class SkillDistribution(unittest.TestCase):
+    def test_snippet_sources_and_dependencies_travel_with_the_release(self):
+        script = str(skill / "scripts/snippet.py")
+        patterns = json.loads((skill / "references/snippets.json").read_bytes())
+        self.assertEqual(len({(r["stack"], r["id"]) for r in patterns}), len(patterns))
+        for row in patterns:
+            for name in [row["file"], *row["dependencies"]]:
+                self.assertTrue((skill / name).resolve().is_relative_to(skill))
+                self.assertTrue((skill / name).is_file(), name)
+            if row["symbol"]:
+                self.assertIn(row["symbol"], (skill / row["file"]).read_text(encoding="utf-8"))
+        for stack in ("web", "flutter", "dioxus", "swiftui"):
+            row = next(r for r in patterns if r["stack"] == stack and r["id"] == "precision")
+            actual = subprocess.check_output([sys.executable, script, stack, "precision", "--code"])
+            self.assertEqual(actual, (skill / row["file"]).read_bytes())
+        self.assertEqual(subprocess.run([sys.executable, script, "dioxus", "missing"], capture_output=True).returncode, 1)
+
     def test_sketch_search_reads_nested_bounds_and_limits_results(self):
         with tempfile.TemporaryDirectory() as directory:
             document = Path(directory) / "Study.sketch"

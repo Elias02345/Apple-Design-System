@@ -13,11 +13,19 @@ impl Cue {
 }
 
 pub fn session() -> Vec<Cue> {
-    [("room", 8, "Room tone", false), ("door", 46, "Door closes", true),
-     ("steps", 93, "Footsteps on stone", false)]
-        .into_iter().map(|(id, seconds, title, review)| Cue {
-            id: id.into(), seconds, title: title.into(), review,
-        }).collect()
+    [
+        ("room", 8, "Room tone", false),
+        ("door", 46, "Door closes", true),
+        ("steps", 93, "Footsteps on stone", false),
+    ]
+    .into_iter()
+    .map(|(id, seconds, title, review)| Cue {
+        id: id.into(),
+        seconds,
+        title: title.into(),
+        review,
+    })
+    .collect()
 }
 
 #[derive(Clone, PartialEq)]
@@ -34,14 +42,24 @@ pub struct Editor {
 
 impl Editor {
     pub fn new(cues: Vec<Cue>) -> Self {
-        let mut editor = Self { cues, active: 0, pending: None, title: String::new(),
-            review: false, busy: false, message: String::new(), invalid: false };
+        let mut editor = Self {
+            cues,
+            active: 0,
+            pending: None,
+            title: String::new(),
+            review: false,
+            busy: false,
+            message: String::new(),
+            invalid: false,
+        };
         editor.reload();
         editor
     }
 
     pub fn dirty(&self) -> bool {
-        self.cues.get(self.active).is_some_and(|c| c.title != self.title || c.review != self.review)
+        self.cues
+            .get(self.active)
+            .is_some_and(|c| c.title != self.title || c.review != self.review)
     }
 
     pub fn reload(&mut self) {
@@ -55,8 +73,15 @@ impl Editor {
     }
 
     pub fn select(&mut self, index: usize) {
-        if self.busy || index >= self.cues.len() || self.active == index { return; }
-        if self.dirty() { self.pending = Some(index); } else { self.active = index; self.reload(); }
+        if self.busy || index >= self.cues.len() || self.active == index {
+            return;
+        }
+        if self.dirty() {
+            self.pending = Some(index);
+        } else {
+            self.active = index;
+            self.reload();
+        }
     }
 
     pub fn discard_and_open(&mut self) {
@@ -67,10 +92,14 @@ impl Editor {
     }
 
     pub fn begin_save(&mut self) -> Option<Cue> {
-        if self.busy || self.pending.is_some() || !self.dirty() { return None; }
+        if self.busy || self.pending.is_some() || !self.dirty() {
+            return None;
+        }
         self.invalid = self.title.trim().is_empty();
         self.message.clear();
-        if self.invalid { return None; }
+        if self.invalid {
+            return None;
+        }
         let mut value = self.cues[self.active].clone();
         value.title = self.title.trim().to_owned();
         value.review = self.review;
