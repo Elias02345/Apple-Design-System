@@ -159,3 +159,20 @@ test('agenda retains a conflicting draft, protects dirty dismissal and restores 
   await page.getByRole('button',{name:'Discard changes'}).click();
   await expect(page.locator('#events li')).toHaveCount(0);
 });
+test('cancelled and duplicate requests cannot replace the latest result',async({page})=>{
+  await page.goto('/controls.html');
+  const events=await page.evaluate(async()=>{
+    const changes=[];
+    const task=Stillform.singleTask({
+      busy:value=>changes.push('busy '+value),success:value=>changes.push(value),failure:err=>changes.push(err.message)
+    });
+    let late;
+    const first=task.run(()=>new Promise(resolve=>{late=resolve;}));
+    await task.run(()=>{throw Error('duplicate executed');});
+    task.cancel();
+    await task.run(async()=>'current');
+    late('stale'); await first;
+    return changes;
+  });
+  expect(events).toEqual(['busy true','busy false','busy true','busy false','current']);
+});

@@ -15,6 +15,7 @@ Start with one sentence describing the person, the object they act on, and the r
 | Navigation, search, editing, permissions, latency, undo | [Flow contracts](references/flows.md) |
 | Spacing, type, color, surfaces, imagery, RTL, density | [Foundations](references/foundations.md) and [semantic web tokens](assets/web/tokens.css) |
 | Choose a control and obtain working code | [Component index](references/components.md) |
+| Copy a portable behavior into an existing app | [Integration recipes](references/recipes.md) and [DOM primitives](assets/web/primitives.js) |
 | Choose motion and its reduced-motion behavior | [Motion](references/motion.md) and [runnable studies](assets/web/motion.html) |
 | Build for iPhone, iPad, Mac, Watch, TV or Vision | [Platform translation](references/platforms.md) |
 | Find Apple's guidance, videos and linked media | [Source guide](references/sources.md) or `python scripts/lookup.py "sheets"` from this skill directory |

@@ -44,6 +44,7 @@ public struct FieldJournalView: View {
                 }
             }
             .navigationTitle("Field journal")
+            .navigationSplitViewColumnWidth(min: 220, ideal: 280, max: 360)
             .searchable(text: $query, prompt: "Search notes")
             .toolbar {
                 ToolbarItem {
@@ -65,6 +66,9 @@ public struct FieldJournalView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     if selectedEntry.pinned { Label("Pinned", systemImage: "pin").foregroundStyle(.secondary) }
                     Text(selectedEntry.title).font(.title).accessibilityAddTraits(.isHeader)
+                    if let observation = selectedEntry.observation, !observation.isEmpty {
+                        Text(observation).frame(maxWidth: 520, alignment: .leading)
+                    }
                     Button("Edit note") { editing = selectedEntry }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
@@ -104,6 +108,10 @@ private struct EntryEditor: View {
         NavigationStack {
             Form {
                 TextField("Title", text: $draft.title, axis: .vertical)
+                TextField("Observation", text: Binding(
+                    get: { draft.observation ?? "" },
+                    set: { draft.observation = $0.isEmpty ? nil : $0 }
+                ), axis: .vertical).lineLimit(2...8)
                 Toggle("Pin this note", isOn: $draft.pinned)
             }
             .formStyle(.grouped)

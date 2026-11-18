@@ -4,10 +4,12 @@ public struct Entry: Identifiable, Codable, Equatable {
     public let id: UUID
     public var title: String
     public var pinned: Bool
-    public init(id: UUID = UUID(), title: String, pinned: Bool = false) {
+    public var observation: String?
+    public init(id: UUID = UUID(), title: String, pinned: Bool = false, observation: String? = nil) {
         self.id = id
         self.title = title
         self.pinned = pinned
+        self.observation = observation
     }
 }
 
@@ -35,8 +37,8 @@ public struct Journal: Codable, Equatable {
     }
 
     public static let sample = Journal(entries: [
-        Entry(title: "Compare the chamber walls", pinned: true),
-        Entry(title: "Photograph the blue crystal faces"),
-        Entry(title: "Trace the fern impression")
+        Entry(title: "Compare the chamber walls", pinned: true, observation: "In the cut ammonite, the chambers widen toward the rim. Follow the pale seam between two neighboring chambers and compare their curvature."),
+        Entry(title: "Photograph the blue crystal faces", observation: "Turn the specimen until one crystal face catches the light. Keep the dark matrix in the frame for comparison."),
+        Entry(title: "Trace the fern impression", observation: "Start at the central stem. Compare the spacing of the leaflets near the base and the tip.")
     ])
 }

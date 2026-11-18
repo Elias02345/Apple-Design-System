@@ -2,7 +2,6 @@
 const $ = ui.byId;
 let jobs = [];
 let removed = null;
-let pending = null;
 function renderQueue() {
   $("queue-empty").hidden = jobs.length > 0;
   $("queue").replaceChildren(...jobs.map(job => {
@@ -35,19 +34,31 @@ function invalid(message) {
   $("job-name").setAttribute("aria-invalid",String(Boolean(message)));
 }
 $("job-name").oninput=() => invalid("");
+const request=Stillform.singleTask({
+  busy,
+  success(job) {
+    jobs.push(job); renderQueue(); $("job-name").value=""; $("job-name").focus();
+    $("job-status").textContent=job.name + " queued.";
+  },
+  failure() {
+    $("job-status").textContent="Printer offline. Turn it on in Test printer connection, then queue again.";
+    $("submit-job").focus();
+  }
+});
 $("job").onsubmit=e => {
-  e.preventDefault(); if (pending!==null) return;
+  e.preventDefault();
   const name=$("job-name").value.trim();
   if (!name) { invalid("Enter a title so you can identify this print."); $("job-name").focus(); return; }
   const job={name,stock:new FormData($("job")).get("stock"),duplex:$("duplex").checked};
-  busy(true); $("job-status").textContent="Sending request to the sample printer."; $("cancel-job").focus();
-  pending=setTimeout(() => {
-    pending=null; busy(false);
-    if (!$("online").checked) { $("job-status").textContent="Printer offline. Turn it on in Test printer connection, then queue again."; $("submit-job").focus(); return; }
-    jobs.push(job); renderQueue(); $("job-name").value=""; $("job-name").focus(); $("job-status").textContent=job.name + " queued.";
-  },850);
+  request.run(signal=>new Promise((resolve,reject)=>{
+    $("job-status").textContent="Sending request to the sample printer."; $("cancel-job").focus();
+    const timer=setTimeout(()=> {
+      if ($("online").checked) resolve(job); else reject(Error("Printer offline"));
+    },850);
+    signal.addEventListener("abort",()=>{ clearTimeout(timer); reject(signal.reason); },{once:true});
+  }));
 };
-$("cancel-job").onclick=() => { clearTimeout(pending); pending=null; busy(false); $("submit-job").focus(); $("job-status").textContent="Request cancelled. Your entries are ready to edit."; };
+$("cancel-job").onclick=() => { request.cancel(); $("submit-job").focus(); $("job-status").textContent="Request cancelled. Your entries are ready to edit."; };
 $("undo").onclick=() => {
   if (!removed) return;
   const index=removed.index;

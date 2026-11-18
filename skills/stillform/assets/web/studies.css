@@ -48,7 +48,8 @@
 #job-status:empty,#save-state:empty,#log-state:empty { display: none; }
 progress { accent-color: var(--tint); width: 100%; }
 @media(max-width: 47rem) {
- .feature,.type-layout,.bench { grid-template-columns: 1fr; }
+ .feature,.type-layout,.bench { grid-template-columns: minmax(0,1fr); }
+ .type-layout h2,.bench h2 { overflow-wrap: anywhere; }
  .feature > img { min-height: 0; height: clamp(9rem,45vw,19rem); grid-row: 1; }
  .feature-copy { gap: .8rem; }
  .proof { min-height: 20rem; }

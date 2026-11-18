@@ -22,4 +22,13 @@ final class JournalTests: XCTestCase {
         XCTAssertTrue(journal.matching("Fern", pinnedOnly:false).isEmpty)
         XCTAssertEqual(journal.matching("", pinnedOnly:false).count,2)
     }
+    func testPreviousNotesWithoutObservationOpenForEditing() throws {
+        let data = Data(#"{"entries":[{"id":"00000000-0000-0000-0000-000000000001","title":"Old note","pinned":false}]}"#.utf8)
+        var journal = try JSONDecoder().decode(Journal.self, from: data)
+        var entry = try XCTUnwrap(journal.entries.first)
+        XCTAssertNil(entry.observation)
+        entry.observation = "Additional detail"
+        XCTAssertTrue(journal.save(entry))
+        XCTAssertEqual(journal.entries.first?.observation, "Additional detail")
+    }
 }

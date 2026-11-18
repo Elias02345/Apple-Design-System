@@ -48,9 +48,9 @@ function renderLog() {
 function refresh() { renderChart(); renderTable(); renderLog(); }
 $("station").onchange = refresh;
 $("hour").oninput = renderChart;
-for (const id of ["metres","feet"]) $(id).onclick = () => {
-  feet = id === "feet"; ui.select($(id).parentElement,$(id)); refresh();
-};
+Stillform.exclusiveButtons($("metres").parentElement, button => {
+  feet = button.id === "feet"; refresh();
+});
 $("log").onclick = () => {
   const station = $("station").value, hour = Number($("hour").value);
   if (log.some(r=>r.station===station && r.hour===hour)) {
