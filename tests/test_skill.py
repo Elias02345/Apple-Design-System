@@ -3,13 +3,33 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 repo=Path(__file__).resolve().parents[1]
 skill=repo/"skills/stillform"
 
 class SkillDistribution(unittest.TestCase):
+    def test_sketch_search_reads_nested_bounds_and_limits_results(self):
+        with tempfile.TemporaryDirectory() as directory:
+            document = Path(directory) / "Study.sketch"
+            first = {"do_objectID": "one", "_class": "symbolMaster", "frame": {"width": 76, "height": 30},
+                     "layers": [{"name": "Label"}]}
+            with zipfile.ZipFile(document, "w") as archive:
+                archive.writestr("meta.json", json.dumps({"pagesAndArtboards": {"p": {
+                    "name": "Light", "artboards": {"one": {"name": "Button/A"}, "two": {"name": "Button/B"}}}}}))
+                archive.writestr("pages/p.json", json.dumps({"layers": [{"layers": [first]}]}))
+            cmd = [sys.executable, str(skill / "scripts/sketch.py"), str(document)]
+            result = subprocess.run([*cmd, "LIGHT", "button", "--limit", "1", "--measure"], capture_output=True, check=True)
+            data = json.loads(result.stdout)
+            self.assertEqual(data["total"], 2)
+            self.assertEqual(len(data["matches"]), 1)
+            self.assertEqual(data["matches"][0]["bounds"], {"width": 76, "height": 30})
+            self.assertEqual(data["matches"][0]["children"], ["Label"])
+            self.assertEqual(subprocess.run([*cmd, "missing"], capture_output=True).returncode, 1)
+
     def test_relative_reference_links_travel_with_skill(self):
         for page in [skill/"SKILL.md",*(skill/"references").glob("*.md")]:
             for dest in re.findall(r"\[[^\]]*\]\(([^)]+)\)", page.read_text(encoding="utf-8")):

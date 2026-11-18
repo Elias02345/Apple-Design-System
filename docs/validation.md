@@ -1,5 +1,7 @@
 # Release validation
 
+The local kit inspector opened all 15 Sketch documents linked by Apple's resource directory and returned measured layer bounds for a named object in each. In the iOS 27 kit, the query `buttons light disabled` found 69 artboards. A synthetic fixture in the public test suite exercises nested layers, match counts, empty queries and output limits without redistributing Apple's files. [Kit workflow](../skills/stillform/references/kits.md)
+
 The browser suite exercises the real HTML entry points using Chromium, Firefox and WebKit. The native suite runs on macOS and builds FieldKit for an iOS Simulator destination. A second package tests the shared station model and compiles the Watch, TV and Vision views against their respective device SDKs. Automated accessibility assertions cover detectable WCAG A/AA issues in the sampled states. VoiceOver speech, real-device touch, remote focus, Crown input and headset comfort need separate hands-on evaluation.
 
 | Observed in the working interface | Change | Regression exercise |

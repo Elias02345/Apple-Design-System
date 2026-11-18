@@ -21,6 +21,7 @@ For a task-specific shortlist, run `python scripts/route.py editor form cancella
 | Choose motion and its reduced-motion behavior | [Motion](references/motion.md) and [runnable studies](assets/web/motion.html) |
 | Build for iPhone, iPad, Mac, Watch, TV or Vision | [Platform translation](references/platforms.md) |
 | Find Apple's guidance, videos and linked media | [Source guide](references/sources.md) or `python scripts/lookup.py "sheets"` from this skill directory |
+| Inspect a variant inside a local Sketch kit | [Working with editable kits](references/kits.md) and [the Sketch inspector](scripts/sketch.py) |
 | Verify an implementation or critique an existing flow | [Inspection loop](references/inspection.md) and [practice briefs](references/briefs.md) |
 
 ## Design and build

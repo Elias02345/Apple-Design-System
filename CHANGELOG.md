@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0 — 2026-11-18
+
+- Agents can search named variants and measure layer bounds in a local Sketch document. The new guide walks through a destructive-button decision using a real kit.
+- Added the verified download link for Apple’s Petite Asteroids visionOS sample.
+
 ## v1.0.0 — 2026-11-17
 
 - Released the Stillform agent skill, traceable design guidance, source lookup and interface inspection workflow.

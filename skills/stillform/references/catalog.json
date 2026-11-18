@@ -8683,7 +8683,9 @@
   "kind": "sample",
   "title": "Petite Asteroids: Building a volumetric visionOS game",
   "url": "https://developer.apple.com/documentation/visionos/petite-asteroids-building-a-volumetric-visionos-game",
-  "downloads": []
+  "downloads": [
+   "https://developer.apple.com/tutorials/e51148b749da/PetiteAsteroidsBuildingAVolumetricVisionOSGame.zip"
+  ]
  },
  {
   "kind": "sample",

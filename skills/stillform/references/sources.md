@@ -2,7 +2,7 @@
 
 Begin with the official topic for the surface or decision in question. The bundled [catalog](catalog.json) indexes titles and canonical links from the English design hub, its reachable HIG topics, linked design sessions, resource pages and developer stories collected for this release. HIG entries also include their discoverable image and clip variant URLs. For an exact API signature, check its framework documentation and deployment availability.
 
-The release index contains 729 title and URL records. Its 6,385 HIG media references include repeated assets and light/dark variants across topics. The sample index points to 86 distinct official project downloads. The public distribution stores links to Apple's original media and sample archives.
+The release index contains 729 title and URL records. Its 6,385 HIG media references include repeated assets and light/dark variants across topics. The sample index points to 87 distinct official project downloads. The public distribution stores links to Apple's original media and sample archives.
 
 Run these searches from the skill folder.
 

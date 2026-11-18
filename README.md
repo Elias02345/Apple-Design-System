@@ -16,6 +16,8 @@ Download `stillform.zip` from the release and extract its `stillform` directory 
 
 ## Working interfaces
 
+For a platform-specific detail, give the agent a local Sketch kit and run `python skills/stillform/scripts/sketch.py "Apple iOS 27 UI Kit.sketch" buttons disabled --measure --limit 2`. It returns named variants, layer identifiers and measured bounds directly from the document. [Editable kit guide](skills/stillform/references/kits.md)
+
 | Specimen cabinet | Tide book |
 | --- | --- |
 | [![Specimen cabinet with its illustrated fossil and collection](showcase/index.png)](skills/stillform/assets/web/index.html) | [![Tide book with a station selector and a hatched water-level curve](showcase/tide.png)](skills/stillform/assets/web/tide.html) |
@@ -28,7 +30,10 @@ Download `stillform.zip` from the release and extract its `stillform` directory 
 
 Open [index.html](skills/stillform/assets/web/index.html) from a local copy to use the gallery. From a checkout, `npm run gallery` serves the examples on the loopback address printed in the terminal. The linked HTML files on GitHub open their source.
 
-The [studio agenda](skills/stillform/assets/web/agenda.html) applies the same rules to a scheduling task. Change a booking, deliberately overlap a second appointment, then recover the draft and save. The code tests interval boundaries and restores focus to the rescheduled booking. [Booking editor](skills/stillform/assets/web/agenda.js)
+| Studio agenda | Light table |
+| --- | --- |
+| [![An appointment editor beside a studio schedule](showcase/agenda.png)](skills/stillform/assets/web/agenda.html) | [![The study light selector and its specimen preview](showcase/motion.png)](skills/stillform/assets/web/motion.html) |
+| Move a booking into an occupied slot, recover the draft and save a valid time. Focus returns to the rescheduled booking. [Booking editor](skills/stillform/assets/web/agenda.js) | Change the light and reverse an opening disclosure. Selection stays immediate and the running transition follows the latest input. [Motion study](skills/stillform/assets/web/motion.js) |
 
 ## Motion in use
 
