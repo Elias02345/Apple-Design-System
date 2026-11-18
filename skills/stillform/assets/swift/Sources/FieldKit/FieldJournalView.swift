@@ -10,6 +10,9 @@ public struct FieldJournalView: View {
 
     public init(journal: Journal = .sample, onChange: @escaping (Journal) -> Void = { _ in }) {
         _journal = State(initialValue: journal)
+        #if os(macOS)
+        _selection = State(initialValue: journal.entries.first?.id)
+        #endif
         self.onChange = onChange
     }
 

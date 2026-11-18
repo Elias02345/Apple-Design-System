@@ -13,7 +13,7 @@ async function capture() {
   const browser=await chromium.launch(process.env.EDGE_PATH?{executablePath:process.env.EDGE_PATH}:{});
   try {
     const page=await browser.newPage({viewport:{width:1200,height:780},deviceScaleFactor:1,colorScheme:'light'});
-    for(const screen of ['index','tide','type','controls','motion']) {
+    for(const screen of ['index','tide','type','controls','motion','agenda']) {
       await page.goto(file(screen));
       await page.evaluate(()=>document.fonts.ready);
       await page.screenshot({path:path.join(out,screen+'.png')});
