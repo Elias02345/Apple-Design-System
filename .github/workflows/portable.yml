@@ -1,0 +1,91 @@
+name: Portable interfaces
+on:
+  push:
+    branches: [main, dev, 'feature/**', 'fix/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  flutter:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: skills/stillform/assets/flutter
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.5'
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter build web --release --no-web-resources-cdn
+      - uses: actions/upload-artifact@v4
+        with:
+          name: flutter-web
+          path: skills/stillform/assets/flutter/build/web
+  dioxus-web:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: skills/stillform/assets/dioxus
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: skills/stillform/assets/dioxus
+      - run: rustup target add wasm32-unknown-unknown
+      - run: cargo test --locked --test editor
+      - name: Install pinned Dioxus CLI
+        run: |
+          curl -fsSLo "$RUNNER_TEMP/dx.tgz" https://github.com/DioxusLabs/dioxus/releases/download/v0.7.3/dx-x86_64-unknown-linux-gnu.tar.gz
+          echo "f274f22d7ed0382d638759cc00b5b7c011457829e83011052ca191c7879f7a0e  $RUNNER_TEMP/dx.tgz" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/stillform-dx"
+          tar -xzf "$RUNNER_TEMP/dx.tgz" -C "$RUNNER_TEMP/stillform-dx"
+          install "$(find "$RUNNER_TEMP/stillform-dx" -type f -name dx -print -quit)" "$HOME/.cargo/bin/dx"
+      - run: dx build --platform web --release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dioxus-web
+          path: skills/stillform/assets/dioxus/target/dx/stillform-cues/release/web/public
+          if-no-files-found: error
+  dioxus-desktop:
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: skills/stillform/assets/dioxus
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: skills/stillform/assets/dioxus
+      - run: cargo build --locked --features desktop
+  rendered:
+    runs-on: ubuntu-24.04
+    needs: [flutter, dioxus-web]
+    container:
+      image: mcr.microsoft.com/playwright:v1.58.2-noble@sha256:6446946a1d9fd62d9ae501312a2d76a43ee688542b21622056a372959b65d63d
+      options: --ipc=host
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: flutter-web
+          path: test-results/portable/flutter
+      - uses: actions/download-artifact@v4
+        with:
+          name: dioxus-web
+          path: test-results/portable/dioxus
+      - run: node tools/check-portable.cjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: portable-captures
+          path: test-results/portable-captures
+          if-no-files-found: error

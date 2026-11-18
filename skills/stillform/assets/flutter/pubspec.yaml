@@ -1,0 +1,14 @@
+name: stillform_cues
+description: Embeddable adaptive controls and a cue editor for Flutter.
+version: 1.2.0
+publish_to: none
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

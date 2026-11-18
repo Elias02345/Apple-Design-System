@@ -1,0 +1,5 @@
+[application]
+name = "stillform-cues"
+
+[web.app]
+title = "Listening desk"
