@@ -51,9 +51,18 @@ swift run FieldDesk
 
 For Watch, TV and Vision, [SurfaceKit](skills/stillform/assets/apple-surfaces) implements a Crown-adjustable reading, a remote-focus station shelf and a spatial reading window. The [platform guide](skills/stillform/references/platforms.md) pairs each view with device-specific acceptance exercises.
 
+<details>
+<summary>See the views rendered by the macOS tests</summary>
+
+![Native field journal with a list of notes and the selected observation](showcase/field-journal.png)
+
+![Native exposure gauge with a slider, stepper and reset action](showcase/reading-gauge.png)
+
+</details>
+
 ## Sources and evidence
 
-The [searchable catalog](skills/stillform/references/sources.md) includes 173 HIG documents and 293 design-session pages. Use `python skills/stillform/scripts/lookup.py "sheets" --media` to locate official documentation and its linked illustrations or clips. Apple's documentation and downloadable resources remain available at their original URLs. The original example artwork, code and recordings ship with Stillform. [Apple Developer Design](https://developer.apple.com/design/) · [Source scope](skills/stillform/references/sources.md)
+The [searchable catalog](skills/stillform/references/sources.md) includes 173 HIG documents, 293 linked video sessions, 90 Apple sample-code articles and 30 Figma or Sketch kit links. Use `python skills/stillform/scripts/lookup.py "sheets" --media` to locate a topic's official illustrations and clips, or `python skills/stillform/scripts/lookup.py "accessibility" --kind sample` to locate downloadable Apple code. The original example artwork, code and recordings ship with Stillform. [Apple Developer Design](https://developer.apple.com/design/) · [Source scope](skills/stillform/references/sources.md)
 
 The [inspection loop](skills/stillform/references/inspection.md) asks an agent to exercise a real task, capture a defect, repair its cause and rerun the failing case. The [browser suite](tests/flows.spec.cjs) checks state, persistence, interruption, focus, reduced motion, compact layout and automated accessibility. The [native tests](skills/stillform/assets/swift/Tests/FieldKitTests/JournalTests.swift) cover model identity, validation, filtering and persistence round-trips.
 

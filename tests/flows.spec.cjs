@@ -176,3 +176,11 @@ test('cancelled and duplicate requests cannot replace the latest result',async({
   });
   expect(events).toEqual(['busy true','busy false','busy true','busy false','current']);
 });
+test('enlarged RTL data labels fit while the time slider agrees with the plotted axis',async({page})=>{
+  await page.goto('/tide.html');
+  await page.setViewportSize({width:390,height:844});
+  await page.evaluate(()=>{ document.documentElement.dir='rtl'; document.documentElement.style.fontSize='200%'; });
+  await expect(page.locator('.axis')).toHaveCSS('direction','ltr');
+  await expect(page.getByRole('slider')).toHaveCSS('direction','ltr');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});

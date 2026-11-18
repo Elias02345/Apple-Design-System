@@ -4,4 +4,5 @@
 
 - Released the Stillform agent skill, traceable design guidance, source lookup and interface inspection workflow.
 - Added six working browser studies, shared visual tokens and a native SwiftUI journal with a reusable control sample.
+- Added 20 machine-readable acceptance contracts, portable interaction primitives and Watch, TV and Vision SwiftUI views.
 - Added browser interaction and accessibility checks, native model tests, original specimen imagery and animation recordings.
