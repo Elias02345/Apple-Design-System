@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Type room · Stillform</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="studies.css">
+<script src="common.js" defer></script>
+<script src="type.js" defer></script>
+</head>
+<body class="type">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><span class="brand"><i class="mark" aria-hidden="true"></i>Stillform</span>
+<nav aria-label="Field studies"><a href="index.html">Cabinet</a>
+<a href="tide.html">Tide book</a>
+<a href="type.html" aria-current="page">Type room</a>
+<a href="controls.html">Controls</a></nav></header>
+<main id="main" tabindex="-1">
+<div class="section-head"><div><p class="eyebrow">Letterpress studio</p><h1>Type room</h1></div></div>
+<div class="type-layout">
+  <section class="proof" aria-labelledby="proof-title"><div class="proof-kicker"><span>Composing room</span><span id="proof-family">Serif</span></div>
+    <div class="proof-body"><div class="print-rule" aria-hidden="true"></div><h2 id="proof-title" dir="auto">Quiet forms</h2></div>
+    <div class="proof-kicker"><span>Working proof</span><span id="proof-meta"></span></div></section>
+  <form id="compose" class="stack"><h2>Composition</h2>
+    <label class="field">Specimen text<textarea id="words" rows="3" maxlength="80" required>Quiet forms</textarea></label>
+    <label class="field">Typeface<select id="family"><option value="serif">Serif</option><option value="sans">Sans serif</option><option value="mono">Monospace</option></select></label>
+    <label class="field">Scale <output id="scale-value" for="scale"></output><input id="scale" type="range" min="2" max="8" step=".25" value="5.5"></label>
+    <label class="check"><input type="checkbox" id="italic"> Italic</label>
+    <div class="actions"><button class="primary" type="submit">Save proof</button><button type="button" id="restore" disabled>Restore saved</button></div>
+    <p id="proof-status" role="status"></p>
+  </form>
+</div>
+</main>
+</body>
+</html>

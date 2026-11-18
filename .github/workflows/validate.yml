@@ -1,0 +1,30 @@
+name: Validate Stillform
+on:
+  push:
+    branches: [dev, main, 'feature/**', 'fix/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browsers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - run: npm test
+      - run: python skills/stillform/scripts/lookup.py buttons --kind guideline --limit 1
+  native:
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: skills/stillform/assets/swift
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift test
+      - run: xcodebuild -scheme FieldKit -destination 'generic/platform=iOS Simulator' -derivedDataPath "$RUNNER_TEMP/stillform-ios" CODE_SIGNING_ALLOWED=NO build

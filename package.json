@@ -1,0 +1,14 @@
+{
+  "name": "stillform-design-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runnable interface field studies and checks for the Stillform agent skill",
+  "scripts": {
+    "test": "playwright test",
+    "gallery": "node tests/serve.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "axe-core": "4.11.1"
+  }
+}

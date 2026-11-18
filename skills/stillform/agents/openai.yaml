@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stillform"
+  short_description: "Build and inspect Apple-informed product interfaces"
+  default_prompt: "Use $stillform to design, implement and test this interface."

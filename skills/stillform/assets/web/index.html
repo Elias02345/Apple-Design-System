@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Specimen cabinet · Stillform</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="studies.css">
+<script src="common.js" defer></script>
+<script src="cabinet.js" defer></script>
+</head>
+<body class="index">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><span class="brand"><i class="mark" aria-hidden="true"></i>Stillform</span>
+<nav aria-label="Field studies"><a href="index.html" aria-current="page">Cabinet</a>
+<a href="tide.html">Tide book</a>
+<a href="type.html">Type room</a>
+<a href="controls.html">Controls</a></nav></header>
+<main id="main" tabindex="-1">
+<div class="section-head"><div><p class="eyebrow">Natural history collection</p><h1>Specimen cabinet</h1></div></div>
+<article class="feature">
+  <div class="feature-copy">
+    <p class="eyebrow">Featured specimen · Palæontology</p>
+    <h2>Ammonite</h2>
+    <p>A cut through the spiral reveals a succession of chambers, each one a record of growth.</p>
+    <button class="primary" id="open-feature">Examine specimen <span aria-hidden="true">↗</span></button>
+  </div>
+  <img src="ammonite.webp" width="1536" height="1024" alt="Polished spiral fossil with amber crystal chambers in pale limestone">
+</article>
+<section class="section" aria-labelledby="catalog-title">
+  <div class="section-head"><h2 id="catalog-title">Collection</h2><div class="tools">
+    <label><span class="sr">Search specimens</span><input type="search" id="search" placeholder="Search specimens"></label>
+    <div class="segment" role="group" aria-label="Collection filter"><button id="all" aria-pressed="true">All</button><button id="saved" aria-pressed="false">Saved</button></div>
+  </div></div>
+  <p role="status" class="muted" id="count"></p>
+  <div id="records"></div>
+  <div id="empty" class="stack note" hidden><h3></h3><p></p><button id="reset">Show all specimens</button></div>
+</section>
+<dialog id="specimen" aria-labelledby="specimen-name">
+  <div class="stack"><p id="accession" class="eyebrow"></p><h2 id="specimen-name"></h2>
+    <img id="detail-image" class="detail-image" alt=""><p id="description"></p>
+    <div class="field"><label for="observation">Field note</label><textarea id="observation" rows="2" maxlength="500" placeholder="Record a detail you noticed"></textarea><small id="note-state" role="status"></small></div>
+    <div class="actions"><button id="bookmark"></button><button id="close-specimen" autofocus>Close</button></div><p id="save-state" role="status"></p>
+  </div>
+</dialog>
+</main>
+</body>
+</html>
