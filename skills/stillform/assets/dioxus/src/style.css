@@ -28,3 +28,12 @@ body:has(.sf-listening) {margin:0;background:light-dark(#faf9f6,#171916)}
 .sf-editor [role=status]:not(:empty),.sf-error {margin-top:.8rem}
 @media(max-width:44em) {.sf-panes{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce) {.sf-cue-strip span{transition:none}}
+.sf-destinations {max-width:58rem;margin:1.25rem auto 0;padding-inline:clamp(1rem,5vw,4rem);display:flex;gap:.5rem;font:1rem system-ui}
+.sf-destinations button {color:inherit;background:transparent;border:0;border-bottom:2px solid transparent;padding:.5rem .75rem;font:inherit;cursor:pointer;min-height:2.75rem}
+.sf-destinations button[aria-pressed=true] {border-color:currentColor;font-weight:650}
+.sf-destinations button:focus-visible {outline:3px solid currentColor}
+.sf-proof {max-width:44rem}
+.sf-passage {border-inline-start:3px solid var(--sf-accent);padding-inline-start:1rem;font-family:Georgia,serif;margin:1.5rem 0}
+.sf-precision {border:0;border-block-start:1px solid var(--sf-rule);margin:1.5rem 0 0;padding:1rem 0 0;min-width:0}
+.sf-precision div {display:flex;align-items:center;gap:.7rem}
+.sf-precision input {min-width:0;flex:1}

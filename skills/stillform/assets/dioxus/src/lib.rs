@@ -1,4 +1,5 @@
 pub mod model;
+pub mod proof;
 use dioxus::prelude::*;
 use model::{Cue, Editor};
 use std::{future::Future, pin::Pin, rc::Rc};

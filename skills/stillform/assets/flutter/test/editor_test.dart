@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:stillform_cues/controls.dart';
 import 'package:stillform_cues/cue.dart';
 import 'package:stillform_cues/cue_desk.dart';
+import 'package:stillform_cues/reading_proof.dart';
 
 Future<void> mount(WidgetTester t, Future<void> Function(Cue) commit,
     {double scale = 1, bool reduced = false, List<Cue> cues = listeningSession}) async {
@@ -13,12 +14,23 @@ Future<void> mount(WidgetTester t, Future<void> Function(Cue) commit,
       child: CueDesk(initialCues: cues, durationSeconds: 120, onCommit: commit))))));
 }
 Future<void> activate(WidgetTester t, Finder finder) async {
+  await t.pump();
   await t.ensureVisible(finder);
   await t.tap(finder);
   await t.pumpAndSettle();
 }
 
 void main() {
+  testWidgets('precision controls, reset and undo restore both reading settings', (t) async {
+    await t.pumpWidget(const MaterialApp(home: Scaffold(body: ReadingProof())));
+    await activate(t, find.byTooltip('Increase type size'));
+    await activate(t, find.text('Open line spacing'));
+    await activate(t, find.text('Reset settings'));
+    expect(find.text('Type size · 20'), findsOneWidget);
+    await activate(t, find.text('Undo reset'));
+    expect(find.text('Type size · 21'), findsOneWidget);
+    expect(t.widget<SwitchListTile>(find.byType(SwitchListTile)).value, isTrue);
+  });
   testWidgets('empty session has a completion state', (t) async {
     await mount(t, (_) async {}, cues: []);
     expect(find.text('No cues in this session.'), findsOneWidget);

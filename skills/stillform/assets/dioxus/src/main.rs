@@ -6,9 +6,15 @@ fn main() { dioxus::launch(App); }
 #[component]
 fn App() -> Element {
     let mut session = use_signal(model::session);
+    let mut proof = use_signal(|| false);
     let initial = session.peek().clone();
     rsx! {
         style { "{STYLE}" }
+        nav { class: "sf-destinations", aria_label: "Studies",
+            button { aria_pressed: (!proof()).to_string(), onclick: move |_| proof.set(false), "Cues" }
+            button { aria_pressed: proof().to_string(), onclick: move |_| proof.set(true), "Type proof" }
+        }
+        div { hidden: proof(),
         CueDesk { initial, duration: 120,
             oncommit: move |cue: Cue| -> SaveFuture {
                 Box::pin(async move {
@@ -19,6 +25,7 @@ fn App() -> Element {
                     Ok(())
                 })
             }
-        }
+        } }
+        div { hidden: !proof(), stillform_cues::proof::ReadingProof {} }
     }
 }

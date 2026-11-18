@@ -42,11 +42,18 @@ async function check(browser, framework) {
     if (framework === 'flutter') await field.click();
     await expect(field).toHaveValue('Evening arrival');
     await page.getByRole('button', {name:'Save changes'}).click();
-    await expect(page.getByText('Changes saved.', {exact:true}).first()).toBeVisible();
+    if (framework === 'dioxus') await expect(page.getByRole('status')).toHaveText('Changes saved.');
+    await expect(page.getByRole('button', {name:/Evening arrival/})).toBeVisible();
     await page.setViewportSize({width:390,height:800});
     await expect(field).toBeAttached();
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1)) throw Error('Overflow');
     await page.screenshot({path:path.join(output, framework + '-compact.png')});
+    await page.getByRole('button', {name:/Type proof/i}).click();
+    await page.getByRole('button', {name:/Increase type size/i}).click();
+    await page.getByRole('button', {name:'Reset settings'}).click();
+    await page.getByRole('button', {name:'Undo reset'}).click();
+    await expect(page.getByRole('button', {name:'Reset settings'})).toBeEnabled();
+    await page.screenshot({path:path.join(output, framework + '-proof.png')});
     if (errors.length) throw Error(errors.join('\n'));
     console.log(framework + ' rendered, protected a draft, saved and reflowed at 390px.');
   } finally { await page.close(); site.close(); }
