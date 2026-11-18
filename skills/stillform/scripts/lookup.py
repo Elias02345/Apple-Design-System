@@ -9,7 +9,7 @@ def search(rows, query, kind):
     words = query.casefold().split()
     def score(row):
         title = row["title"].casefold()
-        haystack = title + " " + urlsplit(row["url"]).path.casefold().replace("-", " ")
+        haystack = title + " " + row["url"].casefold().replace("-", " ")
         if not all(word in haystack for word in words): return None
         return (title != query.casefold(), not title.startswith(query.casefold()), row["kind"] != "guideline", len(title), title)
     matches = []
@@ -22,8 +22,9 @@ def search(rows, query, kind):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("query", help="Title or topic words, for example 'sheets' or 'liquid glass'")
-    parser.add_argument("--kind", choices=["guideline","video","resource","story"])
+    parser.add_argument("--kind", choices=["guideline","video","resource","story","kit"])
     parser.add_argument("--media", action="store_true", help="Include linked HIG illustration and clip variants")
+    parser.add_argument("--media-type", choices=["image","video"], help="Show only matching linked media from the resulting topics")
     parser.add_argument("--limit", type=int, default=8)
     args=parser.parse_args()
     if args.limit < 1: parser.error("--limit must be positive")
@@ -31,8 +32,10 @@ def main():
     rows=search(json.loads(path.read_text(encoding="utf-8")),args.query,args.kind)
     for row in rows[:args.limit]:
         print(f"{row['title']} [{row['kind']}]\n  {row['url']}")
-        if args.media:
-            for url in row.get("media",[]): print("  " + url)
+        if args.media or args.media_type:
+            for url in row.get("media",[]):
+                is_video=urlsplit(url).path.lower().endswith((".mp4",".mov",".m4v",".webm"))
+                if args.media_type is None or args.media_type==("video" if is_video else "image"): print("  " + url)
     if not rows: print("No matching source titles. Try a shorter topic or another platform term.")
     return 0 if rows else 1
 

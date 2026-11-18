@@ -9,6 +9,8 @@ python scripts/lookup.py "buttons" --kind guideline --media
 python scripts/lookup.py "liquid glass" --kind video
 python scripts/lookup.py "design resources" --kind resource
 python scripts/lookup.py "watchos" --limit 12
+python scripts/lookup.py "figma" --kind kit
+python scripts/lookup.py "motion" --media-type video
 ```
 
 | Question | Primary source |

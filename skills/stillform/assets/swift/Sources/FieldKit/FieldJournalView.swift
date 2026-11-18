@@ -26,6 +26,8 @@ public struct FieldJournalView: View {
                     NavigationLink(value: entry.id) {
                         HStack {
                             Text(entry.title)
+                                .lineLimit(2)
+                                .fixedSize(horizontal: false, vertical: true)
                             if entry.pinned {
                                 Image(systemName: "pin.fill")
                                     .accessibilityLabel("Pinned")
